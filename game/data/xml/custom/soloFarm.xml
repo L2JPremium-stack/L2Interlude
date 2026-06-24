@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    
+    <soloFarm enabled="true" name="SoloFarm">
+        
+        <!-- NPC responsável por abrir o evento -->
+        <entryNpc id="57008" />
+        
+        <!-- Local onde o player entra na instância -->
+        <entryLocation x="147450" y="25620" z="-2000" />
+        
+        <!-- Local para onde o player será enviado ao finalizar -->
+        <exitLocation x="82698" y="148638" z="-3473" />
+        
+        <!-- Sistema de pagamento -->
+        <price itemId="57" countPerMob="1000" />
+        
+        <!-- Limites de compra -->
+        <limits minBuy="100" maxBuy="5000" customBuy="true" />
+        
+        <!-- Tempo máximo da instância -->
+        <timer instanceMinutes="30" />
+        
+        <!-- Controle de spawn -->
+        <spawnControl maxAliveMonsters="20" respawnOnKillDelay="10" />
+        
+        <!-- Drops -->
+        <rewards>
+            <reward itemId="57" min="1000" max="3000" chance="100" />
+            <reward itemId="6673" min="1" max="2" chance="25" />
+            <reward itemId="6393" min="1" max="1" chance="5" />
+        </rewards>
+        
+    </soloFarm>
+    
+</list>

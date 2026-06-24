@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dolls>
+    <Doll Id="6392" SkillId="27504" SkillLvl="1" SkillPower="2.0"/> <!-- Baium Doll Lv. 1 -->
+    <Doll Id="20701" SkillId="27504" SkillLvl="2" SkillPower="2.0"/> <!-- Baium Doll Lv. 2 -->
+    <Doll Id="20702" SkillId="27504" SkillLvl="3" SkillPower="2.0"/> <!-- Baium Doll Lv. 3 -->
+    <Doll Id="20703" SkillId="27506" SkillLvl="1" SkillPower="2.0"/> <!-- Core Dolls Lv. 1 -->
+    <Doll Id="20704" SkillId="27506" SkillLvl="2" SkillPower="2.0"/> <!-- Core Dolls Lv. 2 -->
+    <Doll Id="20705" SkillId="27506" SkillLvl="3" SkillPower="2.0"/> <!-- Core Dolls Lv. 3 -->
+    <Doll Id="20706" SkillId="27505" SkillLvl="1" SkillPower="2.0"/> <!-- Frintezza Dolls Lv. 1 -->
+    <Doll Id="20707" SkillId="27505" SkillLvl="2" SkillPower="2.0"/> <!-- Frintezza Dolls Lv. 2 -->
+    <Doll Id="20708" SkillId="27505" SkillLvl="3" SkillPower="2.0"/> <!-- Frintezza Dolls Lv. 3 -->
+    <Doll Id="20709" SkillId="27507" SkillLvl="1" SkillPower="2.0"/> <!-- Orfen Dolls Lv. 1 -->
+    <Doll Id="20710" SkillId="27507" SkillLvl="2" SkillPower="2.0"/> <!-- Orfen Dolls Lv. 2 -->
+    <Doll Id="20711" SkillId="27507" SkillLvl="3" SkillPower="2.0"/> <!-- Orfen Dolls Lv. 3 -->
+    <Doll Id="20712" SkillId="27501" SkillLvl="1" SkillPower="2.0"/> <!-- Antharas Doll Lv. 1 -->
+    <Doll Id="20713" SkillId="27501" SkillLvl="2" SkillPower="2.0"/> <!-- Antharas Doll Lv. 2 -->
+    <Doll Id="20714" SkillId="27501" SkillLvl="3" SkillPower="2.0"/> <!-- Antharas Doll Lv. 3 -->
+    <Doll Id="20715" SkillId="27503" SkillLvl="1" SkillPower="2.0"/> <!-- Queen Ant Doll Lv. 1 -->
+    <Doll Id="20716" SkillId="27503" SkillLvl="2" SkillPower="2.0"/> <!-- Queen Ant Doll Lv. 2 -->
+    <Doll Id="20717" SkillId="27503" SkillLvl="3" SkillPower="2.0"/> <!-- Queen Ant Doll Lv. 3 -->
+    <Doll Id="20721" SkillId="27502" SkillLvl="1" SkillPower="2.0"/> <!-- Zaken Doll Lv. 1 -->
+    <Doll Id="20722" SkillId="27502" SkillLvl="2" SkillPower="2.0"/> <!-- Zaken Doll Lv. 2 -->
+    <Doll Id="20723" SkillId="27502" SkillLvl="3" SkillPower="2.0"/> <!-- Zaken Doll Lv. 3 -->
+</Dolls>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+=====================================================
+ FUSION ITEMS – COMO CONFIGURAR (guia para o cliente)
+=====================================================
+
+ARQUIVO: data/xml/custom/FusionItems.xml
+
+O QUE É:
+- Define “receitas” de fusão que o NPC mostra por categoria.
+- Na fusão, os ingredientes são consumidos (itens NÃO equipados).
+- O novo item herda o encantamento do “item base”:
+    1) se um dos ingredientes estiver EQUIPADO, ele é o base;
+    2) senão, usa o ingrediente com MAIOR enchant no inventário.
+
+CATEGORIAS ACEITAS (case-insensitive):
+- Weapons, Armor, Jewels, Acessorios
+
+ESTRUTURA DE CADA RECEITA:
+<fusion category="NOME_DA_CATEGORIA">
+    <ingredients>
+        <item id="ITEM_ID" count="QUANTIDADE"/>
+        <item id="ITEM_ID" count="QUANTIDADE"/>
+        ...
+    </ingredients>
+    <result id="ITEM_RESULTADO" count="QUANTIDADE"/>
+    <chance>PORCENTAGEM_DE_SUCESSO</chance>
+    <failItem id="ITEM_DE_FALHA" count="QUANTIDADE"/>
+</fusion>
+
+OBSERVAÇÕES IMPORTANTES:
+- Todos os IDs são IDs de item do servidor.
+- <chance> é um número inteiro de 0 a 100.
+- <failItem> é OBRIGATÓRIO: é o “prêmio de consolação” na falha.
+  (Ex.: Adena 57, algum material, ou até o próprio resultado se quiser.)
+- Evite duplicar muitas receitas iguais para não poluir a lista.
+- Para aplicar alterações sem reiniciar o servidor:
+  use o comando com o Admin //reload fusion
+
+EXEMPLO MÍNIMO (por categoria):
+
+-->
+
+
+<Fusions>
+    <!-- category: Weapons | Armor | Jewels | Acessorios (ou Accessories) -->
+
+    <!-- WEAPONS -->
+    <fusion category="Weapons">
+        <ingredients>
+            <item id="6367" count="1"/>   <!-- Ex.: arma base -->
+            <item id="6393" count="30"/>  <!-- Ex.: material -->
+        </ingredients>
+        <result id="6590" count="1"/>     <!-- Ex.: arma resultante -->
+        <chance>60</chance>
+        <failItem id="6590" count="1"/>   <!-- Ex.: no fail entrega 1 do mesmo item (ajuste se desejar outro) -->
+    </fusion>
+
+    <fusion category="Weapons">
+        <ingredients>
+            <item id="6579" count="1"/>
+            <item id="6393" count="30"/>
+        </ingredients>
+        <result id="6608" count="1"/>
+        <chance>60</chance>
+        <failItem id="6608" count="1"/>
+    </fusion>
+	<fusion category="Weapons">
+        <ingredients>
+            <item id="6367" count="1"/>
+            <item id="6393" count="30"/>
+        </ingredients>
+        <result id="6590" count="1"/>
+        <chance>60</chance>
+        <failItem id="6590" count="1"/>
+    </fusion>
+
+    <fusion category="Weapons">
+        <ingredients>
+            <item id="6380" count="1"/>
+            <item id="6393" count="30"/>
+        </ingredients>
+        <result id="6595" count="1"/>
+        <chance>60</chance>
+        <failItem id="6595" count="1"/>
+    </fusion>
+
+    <fusion category="Weapons">
+        <ingredients>
+            <item id="6579" count="1"/>
+            <item id="6393" count="30"/>
+        </ingredients>
+        <result id="6608" count="1"/>
+        <chance>60</chance>
+        <failItem id="6608" count="1"/>
+    </fusion>
+	<fusion category="Weapons">
+        <ingredients>
+            <item id="6367" count="1"/>
+            <item id="6393" count="30"/>
+        </ingredients>
+        <result id="6590" count="1"/>
+        <chance>60</chance>
+        <failItem id="6590" count="1"/>
+    </fusion>
+
+    <fusion category="Weapons">
+        <ingredients>
+            <item id="6380" count="1"/>
+            <item id="6393" count="30"/>
+        </ingredients>
+        <result id="6595" count="1"/>
+        <chance>60</chance>
+        <failItem id="6595" count="1"/>
+    </fusion>
+
+    <fusion category="Weapons">
+        <ingredients>
+            <item id="6579" count="1"/>
+            <item id="6393" count="30"/>
+        </ingredients>
+        <result id="6608" count="1"/>
+        <chance>60</chance>
+        <failItem id="6608" count="1"/>
+    </fusion>
+
+    <!-- ARMOR -->
+    <fusion category="Armor">
+        <ingredients>
+            <item id="6680" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="6379" count="1"/>
+        <chance>40</chance>
+        <failItem id="6379" count="1"/>
+    </fusion>
+
+    <fusion category="Armor">
+        <ingredients>
+            <item id="6680" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="6382" count="1"/>
+        <chance>40</chance>
+        <failItem id="6382" count="1"/>
+    </fusion>
+
+    <fusion category="Armor">
+        <ingredients>
+            <item id="6681" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="6380" count="1"/>	
+        <chance>40</chance>
+        <failItem id="6380" count="1"/>
+    </fusion>
+
+    <fusion category="Armor">
+        <ingredients>
+            <item id="6682" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="6381" count="1"/>
+        <chance>40</chance>
+        <failItem id="6381" count="1"/>
+    </fusion>
+
+    <!-- JEWELS -->
+    <fusion category="Jewels">
+        <ingredients>
+            <item id="6725" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="889" count="1"/>
+        <chance>40</chance>
+        <failItem id="889" count="1"/>
+    </fusion>
+
+    <fusion category="Jewels">
+        <ingredients>
+            <item id="6724" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="858" count="1"/>
+        <chance>40</chance>
+        <failItem id="858" count="1"/>
+    </fusion>
+
+    <fusion category="Jewels">
+        <ingredients>
+            <item id="6726" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="920" count="1"/>
+        <chance>40</chance>
+        <failItem id="920" count="1"/>
+    </fusion>
+
+    <!-- ACESSORIOS -->
+    <fusion category="Acessorios">
+        <ingredients>
+            <item id="8187" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="8552" count="1"/>
+        <chance>40</chance>
+        <failItem id="8552" count="1"/>
+    </fusion>
+
+    <fusion category="Acessorios">
+        <ingredients>
+            <item id="8188" count="1"/>
+            <item id="6393" count="20"/>
+        </ingredients>
+        <result id="8186" count="1"/>
+        <chance>40</chance>
+        <failItem id="8186" count="1"/>
+    </fusion>
+
+</Fusions>

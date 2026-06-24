@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<zone type="PvPEventZone" shape="NPoly" minZ="-7000" maxZ="-2313"> <!-- Primeval Isle  -->
+		<node X="12340" Y="-24941" />
+		<node X="11704" Y="-25311" />
+		<node X="9926" Y="-25191" />
+		<node X="4210" Y="-23826" />
+		<node X="4093" Y="-23161" />
+		<node X="6780" Y="-22309" />
+		<node X="9009" Y="-20666" />
+		<node X="12838" Y="-22601" />
+        <spawn X='10468' Y='-24569' Z='-3645'/>
+        <spawn X='10928' Y='-24641' Z='-3643'/>
+        <spawn X='8480' Y='-23706' Z='-3727'/>
+        <spawn X='9692' Y='-22160' Z='-3721'/>
+    </zone>
+</list>

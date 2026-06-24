@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakes>
+	<!-- HUMAN -->
+	<fake classId="0" title="">
+		<stats level="1"/>
+		<appearance hairStyle="1" hairColor="1" face="1" sex="male"/>
+		<items>
+			<item id="1147" count="1" isEquipped="true"/>
+			<item id="1146" count="1" isEquipped="true"/>
+			<item id="2369" count="1" isEquipped="true"/>
+			<item id="1835" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="8" title="">
+		<stats level="62"/>
+		<appearance hairStyle="1" hairColor="1" face="1" sex="male"/>
+		<items>
+			<item id="2385" count="1" isEquipped="true"/>
+			<item id="2389" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5766" count="1" isEquipped="true"/>
+			<item id="5778" count="1" isEquipped="true"/>
+			<item id="4784" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="9" title="">
+		<stats level="62"/>
+		<appearance hairStyle="1" hairColor="1" face="1" sex="male"/>
+		<items>
+			<item id="2385" count="1" isEquipped="true"/>
+			<item id="2389" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5766" count="1" isEquipped="true"/>
+			<item id="5778" count="1" isEquipped="true"/>
+			<item id="5611" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="88" title="">
+		<stats level="77"/>
+		<appearance hairStyle="0" hairColor="1" face="0" sex="male"/>
+		<items>
+			<item id="6373" count="1" isEquipped="true"/>
+			<item id="6374" count="1" isEquipped="true"/>
+			<item id="6375" count="1" isEquipped="true"/>
+			<item id="6376" count="1" isEquipped="true"/>
+			<item id="6378" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6580" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="90" title="">
+		<stats level="77"/>
+		<appearance hairStyle="2" hairColor="0" face="1" sex="male"/>
+		<items>
+			<item id="6373" count="1" isEquipped="true"/>
+			<item id="6374" count="1" isEquipped="true"/>
+			<item id="6375" count="1" isEquipped="true"/>
+			<item id="6376" count="1" isEquipped="true"/>
+			<item id="6378" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6583" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="92" title="">
+		<stats level="77"/>
+		<appearance hairStyle="3" hairColor="2" face="0" sex="female"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="7577" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="93" title="">
+		<stats level="77"/>
+		<appearance hairStyle="1" hairColor="1" face="2" sex="male"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6590" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="10" title="">
+		<stats level="1"/>
+		<appearance hairStyle="1" hairColor="2" face="1" sex="female"/>
+		<items>
+			<item id="425" count="1" isEquipped="true"/>
+			<item id="461" count="1" isEquipped="true"/>
+			<item id="6" count="1" isEquipped="true"/>
+			<item id="3947" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="94" title="">
+		<stats level="77"/>
+		<appearance hairStyle="1" hairColor="3" face="1" sex="female"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="95" title="">
+		<stats level="77"/>
+		<appearance hairStyle="2" hairColor="0" face="0" sex="male"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="97" title="">
+		<stats level="77"/>
+		<appearance hairStyle="0" hairColor="2" face="2" sex="female"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<!-- ELF -->
+	<fake classId="18" title="">
+		<stats level="1"/>
+		<appearance hairStyle="2" hairColor="3" face="1" sex="male"/>
+		<items>
+			<item id="1147" count="1" isEquipped="true"/>
+			<item id="1146" count="1" isEquipped="true"/>
+			<item id="2369" count="1" isEquipped="true"/>
+			<item id="1835" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="101" title="">
+		<stats level="77"/>
+		<appearance hairStyle="1" hairColor="0" face="1" sex="male"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6590" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="102" title="">
+		<stats level="77"/>
+		<appearance hairStyle="2" hairColor="2" face="0" sex="female"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="7577" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="25" title="">
+		<stats level="1"/>
+		<appearance hairStyle="2" hairColor="4" face="1" sex="female"/>
+		<items>
+			<item id="425" count="1" isEquipped="true"/>
+			<item id="461" count="1" isEquipped="true"/>
+			<item id="6" count="1" isEquipped="true"/>
+			<item id="3947" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="103" title="">
+		<stats level="77"/>
+		<appearance hairStyle="0" hairColor="3" face="1" sex="female"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="104" title="">
+		<stats level="77"/>
+		<appearance hairStyle="0" hairColor="3" face="1" sex="female"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<!-- DARK ELF -->
+	<fake classId="31" title="">
+		<stats level="1"/>
+		<appearance hairStyle="3" hairColor="0" face="1" sex="male"/>
+		<items>
+			<item id="1147" count="1" isEquipped="true"/>
+			<item id="1146" count="1" isEquipped="true"/>
+			<item id="2369" count="1" isEquipped="true"/>
+			<item id="1835" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="108" title="">
+		<stats level="77"/>
+		<appearance hairStyle="3" hairColor="0" face="2" sex="male"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6590" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="109" title="">
+		<stats level="77"/>
+		<appearance hairStyle="1" hairColor="1" face="1" sex="female"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="7577" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<!-- DARK ELF Mages-->
+	<fake classId="38" title="">
+		<stats level="1"/>
+		<appearance hairStyle="3" hairColor="1" face="1" sex="female"/>
+		<items>
+			<item id="425" count="1" isEquipped="true"/>
+			<item id="461" count="1" isEquipped="true"/>
+			<item id="6" count="1" isEquipped="true"/>
+			<item id="3947" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="110" title="">
+		<stats level="77"/>
+		<appearance hairStyle="2" hairColor="3" face="0" sex="female"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<!-- ORC -->
+	<fake classId="44" title="">
+		<stats level="1"/>
+		<appearance hairStyle="0" hairColor="0" face="0" sex="male"/>
+		<items>
+			<item id="1147" count="1" isEquipped="true"/>
+			<item id="1146" count="1" isEquipped="true"/>
+			<item id="2369" count="1" isEquipped="true"/>
+			<item id="1835" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="113" title="">
+		<stats level="77"/>
+		<appearance hairStyle="0" hairColor="0" face="0" sex="male"/>
+		<items>
+			<item id="6373" count="1" isEquipped="true"/>
+			<item id="6374" count="1" isEquipped="true"/>
+			<item id="6375" count="1" isEquipped="true"/>
+			<item id="6376" count="1" isEquipped="true"/>
+			<item id="6378" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6607" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="114" title="">
+		<stats level="77"/>
+		<appearance hairStyle="1" hairColor="1" face="1" sex="male"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6602" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<!-- ORC Mages -->
+	<fake classId="49" title="">
+		<stats level="1"/>
+		<appearance hairStyle="0" hairColor="0" face="0" sex="female"/>
+		<items>
+			<item id="425" count="1" isEquipped="true"/>
+			<item id="461" count="1" isEquipped="true"/>
+			<item id="6" count="1" isEquipped="true"/>
+			<item id="3947" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="115" title="">
+		<stats level="77"/>
+		<appearance hairStyle="2" hairColor="2" face="2" sex="male"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="116" title="">
+		<stats level="77"/>
+		<appearance hairStyle="3" hairColor="3" face="0" sex="male"/>
+		<items>
+			<item id="2407" count="1" isEquipped="true"/>
+			<item id="512" count="1" isEquipped="true"/>
+			<item id="5767" count="1" isEquipped="true"/>
+			<item id="5779" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6608" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+
+	<!-- DWARF -->
+	<fake classId="53" title="">
+		<stats level="1"/>
+		<appearance hairStyle="1" hairColor="2" face="1" sex="male"/>
+		<items>
+			<item id="1147" count="1" isEquipped="true"/>
+			<item id="1146" count="1" isEquipped="true"/>
+			<item id="2370" count="1" isEquipped="true"/>
+			<item id="1835" count="100" isEquipped="false"/>
+		</items>
+	</fake>
+	<fake classId="117" title="">
+		<stats level="77"/>
+		<appearance hairStyle="0" hairColor="1" face="1" sex="female"/>
+		<items>
+			<item id="6379" count="1" isEquipped="true"/>
+			<item id="6380" count="1" isEquipped="true"/>
+			<item id="6381" count="1" isEquipped="true"/>
+			<item id="6382" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6590" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+	<fake classId="118" title="">
+		<stats level="77"/>
+		<appearance hairStyle="1" hairColor="2" face="0" sex="male"/>
+		<items>
+			<item id="6373" count="1" isEquipped="true"/>
+			<item id="6374" count="1" isEquipped="true"/>
+			<item id="6375" count="1" isEquipped="true"/>
+			<item id="6376" count="1" isEquipped="true"/>
+			<item id="6378" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="858" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="889" count="1" isEquipped="true"/>
+			<item id="920" count="1" isEquipped="true"/>
+			<item id="6585" count="1" isEquipped="true"/>
+			<item id="6377" count="1" isEquipped="true"/>
+		</items>
+	</fake>
+
+</fakes>

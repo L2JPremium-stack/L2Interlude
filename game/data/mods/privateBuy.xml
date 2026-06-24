@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<items id="1">
+	<item id="1467" count="5000" /> <!-- Soulshot: No Grade -->
+	<item id="1464" count="3000" /> <!-- Spiritshot: No Grade -->
+	<item id="1539" count="200" />  <!-- Greater Healing Potion -->
+	<item id="5592" count="100" />  <!-- CP Potion -->
+	<item id="736" count="20" />    <!-- Scroll of Escape -->
+	<item id="737" count="10" />    <!-- Scroll of Resurrection -->
+	<item id="0" count="0" title="Consumables" />
+</items>
+<items id="2">
+	<item id="1468" count="5000" /> <!-- Soulshot D -->
+	<item id="1469" count="5000" /> <!-- Soulshot C -->
+	<item id="3947" count="3000" /> <!-- Spiritshot D -->
+	<item id="3948" count="3000" /> <!-- Spiritshot C -->
+	<item id="0" count="0" title="Shots D/C" />
+</items>
+<items id="3">
+	<item id="3950" count="2000" /> <!-- Blessed Spiritshot D -->
+	<item id="3951" count="2000" /> <!-- Blessed Spiritshot C -->
+	<item id="0" count="0" title="Blessed Spiritshots" />
+</items>
+<items id="4">
+	<item id="955" count="3" /> <!-- Enchant Weapon D -->
+	<item id="956" count="3" /> <!-- Enchant Armor D -->
+	<item id="951" count="2" /> <!-- Enchant Weapon C -->
+	<item id="952" count="2" /> <!-- Enchant Armor C -->
+	<item id="6577" count="1" /> <!-- Blessed Weapon -->
+	<item id="6578" count="1" /> <!-- Blessed Armor -->
+	<item id="0" count="0" title="Enchant Scrolls" />
+</items>
+<items id="5">
+	<item id="8723" count="1" /> <!-- Life Stone Lv 46 -->
+	<item id="8724" count="1" /> <!-- Life Stone Lv 49 -->
+	<item id="8725" count="1" /> <!-- Life Stone Lv 52 -->
+	<item id="0" count="0" title="Life Stones" />
+</items>
+<items id="6">
+	<item id="4963" count="1" /> <!-- Recipe: Sword of Miracles -->
+	<item id="4964" count="1" /> <!-- Recipe: Elemental Sword -->
+	<item id="4126" count="1" /> <!-- Recipe: Tallum Blade -->
+	<item id="0" count="0" title="Weapon Recipes" />
+</items>
+<items id="7">
+	<item id="6622" count="1" /> <!-- Giant's Codex -->
+	<item id="0" count="0" title="Rare Items" />
+</items>
+<items id="8">
+	<!-- C Grade Sealed Weapons -->
+	<item id="6360" count="1" /> <!-- Sealed Sword of Miracles -->
+	<item id="6361" count="1" /> <!-- Sealed Elemental Sword -->
+	<item id="6362" count="1" /> <!-- Sealed Tallum Blade -->
+	<item id="6363" count="1" /> <!-- Sealed Elysian -->
+	<item id="6364" count="1" /> <!-- Sealed Doom Crusher -->
+	<item id="6365" count="1" /> <!-- Sealed Doom Hammer -->
+	<item id="0" count="0" title="Sealed Weapons (C)" />
+</items>
+<items id="9">
+	<!-- C Grade Sealed Mage / Bow -->
+	<item id="6366" count="1" /> <!-- Sealed Hell Knife -->
+	<item id="6367" count="1" /> <!-- Sealed Crystal Dagger -->
+	<item id="6368" count="1" /> <!-- Sealed Dark Legion's Edge -->
+	<item id="6369" count="1" /> <!-- Sealed Bow of Peril -->
+	<item id="0" count="0" title="Sealed C (Mage/Bow)" />
+</items>
+<items id="10">
+	<!-- A Grade Sealed Weapons -->
+	<item id="6581" count="1" /> <!-- Sealed Sword of Miracles -->
+	<item id="6582" count="1" /> <!-- Sealed Elemental Sword -->
+	<item id="6583" count="1" /> <!-- Sealed Tallum Blade -->
+	<item id="6584" count="1" /> <!-- Sealed Elysian -->
+	<item id="6585" count="1" /> <!-- Sealed Doom Crusher -->
+	<item id="6586" count="1" /> <!-- Sealed Doom Hammer -->
+	<item id="0" count="0" title="Sealed Weapons (A)" />
+</items>
+<items id="11">
+	<!-- A Grade Sealed Bow / Dagger -->
+	<item id="6587" count="1" /> <!-- Sealed Soul Bow -->
+	<item id="6588" count="1" /> <!-- Sealed Shyeed's Bow -->
+	<item id="6589" count="1" /> <!-- Sealed Angel Slayer -->
+	<item id="6590" count="1" /> <!-- Sealed Dragon Hunter Axe -->
+	<item id="0" count="0" title="Sealed A (Bow/Dagger)" />
+</items>
+
+</list>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <!--
+      Configuração de respawn Somente Raid bosses por dia da semana e horário.
+      O atributo day deve conter o nome do dia da semana em inglês, sempre maiúsculo:
+      
+      MONDAY    - Segunda-feira
+      TUESDAY   - Terça-feira
+      WEDNESDAY - Quarta-feira
+      THURSDAY  - Quinta-feira
+      FRIDAY    - Sexta-feira
+      SATURDAY  - Sábado
+      SUNDAY    - Domingo
+    -->
+
+    <!-- Boss com ID 25325, que spawnará em dias e horários diferentes -->
+    <boss id="25325">
+        <respawn day="FRIDAY" time="22:14"/>    <!-- Sexta-feira às 22:14 -->
+        <respawn day="FRIDAY" time="23:15"/>   <!-- Sexta-feira às 23:15 -->
+        <respawn day="FRIDAY" time="22:16"/>    <!-- Sexta-feira às 22:16 -->
+    </boss>
+
+    <!-- Boss com ID 25327, spawn todos os domingos às 15:00 -->
+    <boss id="25327">
+        <respawn day="SUNDAY" time="15:00"/>    <!-- Domingo às 15:00 -->
+    </boss>
+</list>

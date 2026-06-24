@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+	<!-- =====================================================
+	     CHAT TYPE: TELL (Private Message)
+	     ===================================================== -->
+	<chat type="TELL">
+
+		<language id="pt_BR">
+			<context id="ANY">
+				<group chance="60">
+					<msg>oi</msg>
+					<msg>fala</msg>
+					<msg>opa</msg>
+					<msg>e ai</msg>
+					<msg>salve</msg>
+					<msg>tudo bem?</msg>
+					<msg>tranquilo?</msg>
+					<msg>bom dia</msg>
+					<msg>boa tarde</msg>
+					<msg>boa noite</msg>
+				</group>
+				<group chance="40">
+					<msg>to upando agora</msg>
+					<msg>depois falo</msg>
+					<msg>ja te chamo</msg>
+					<msg>to ocupado agora</msg>
+					<msg>mais tarde conversamos</msg>
+					<msg>to resolvendo umas coisas</msg>
+				</group>
+			</context>
+
+			<context id="COMBAT">
+				<group chance="80">
+					<msg>to em pvp agora</msg>
+					<msg>me chama depois</msg>
+					<msg>to brigando aqui</msg>
+					<msg>to em fight</msg>
+					<msg>agora nao da</msg>
+					<msg>depois respondo</msg>
+				</group>
+			</context>
+
+			<context id="CITY">
+				<group chance="50">
+					<msg>to em giran</msg>
+					<msg>to na city</msg>
+					<msg>passa la depois</msg>
+					<msg>to vendendo umas coisas</msg>
+					<msg>to organizando inventario</msg>
+				</group>
+			</context>
+
+			<context id="FARM">
+				<group chance="70">
+					<msg>to farmando</msg>
+					<msg>drop ta ruim hoje</msg>
+					<msg>upando lvl</msg>
+					<msg>to catando drop</msg>
+					<msg>farm infinito</msg>
+					<msg>so no grind</msg>
+				</group>
+			</context>
+			<context id="DEAD">
+				<group chance="70">
+					<msg>im fuck you!</msg>
+
+				</group>
+			</context>
+			</language>
+
+		<language id="en_GB">
+			<context id="ANY">
+				<group chance="60">
+					<msg>hi</msg>
+					<msg>hey</msg>
+					<msg>yo</msg>
+					<msg>hello</msg>
+					<msg>sup</msg>
+					<msg>how are you?</msg>
+				</group>
+				<group chance="40">
+					<msg>busy right now</msg>
+					<msg>talk later</msg>
+					<msg>cant now</msg>
+					<msg>maybe later</msg>
+				</group>
+			</context>
+
+			<context id="COMBAT">
+				<group chance="80">
+					<msg>in pvp now</msg>
+					<msg>cant talk</msg>
+					<msg>fighting atm</msg>
+					<msg>busy with pvp</msg>
+				</group>
+			</context>
+
+			<context id="CITY">
+				<group chance="50">
+					<msg>in giran</msg>
+					<msg>in town</msg>
+					<msg>checking shops</msg>
+					<msg>organizing gear</msg>
+				</group>
+			</context>
+
+			<context id="FARM">
+				<group chance="70">
+					<msg>farming now</msg>
+					<msg>bad drops today</msg>
+					<msg>exp grind</msg>
+					<msg>still farming</msg>
+				</group>
+			</context>
+		</language>
+
+		<language id="es_ES">
+			<context id="ANY">
+				<group chance="60">
+					<msg>hola</msg>
+					<msg>que tal</msg>
+					<msg>buenas</msg>
+					<msg>todo bien?</msg>
+				</group>
+				<group chance="40">
+					<msg>estoy ocupado</msg>
+					<msg>hablamos luego</msg>
+					<msg>despues te digo</msg>
+				</group>
+			</context>
+
+			<context id="COMBAT">
+				<group chance="80">
+					<msg>estoy en pvp</msg>
+					<msg>no puedo ahora</msg>
+					<msg>peleando ahora</msg>
+				</group>
+			</context>
+
+			<context id="FARM">
+				<group chance="70">
+					<msg>farmeando ahora</msg>
+					<msg>mal drop hoy</msg>
+					<msg>subiendo nivel</msg>
+				</group>
+			</context>
+		</language>
+	</chat>
+
+
+
+	<!-- =====================================================
+	     CHAT TYPE: ALL (Global Message)
+	     ===================================================== -->
+	<chat type="ALL">
+
+<language id="pt_BR">
+			<context id="ANY">
+				<group chance="60">
+					<msg>oi</msg>
+					<msg>fala</msg>
+					<msg>opa</msg>
+					<msg>e ai</msg>
+					<msg>salve</msg>
+					<msg>tudo bem?</msg>
+					<msg>tranquilo?</msg>
+					<msg>bom dia</msg>
+					<msg>boa tarde</msg>
+					<msg>boa noite</msg>
+				</group>
+				<group chance="40">
+					<msg>to upando agora</msg>
+					<msg>depois falo</msg>
+					<msg>ja te chamo</msg>
+					<msg>to ocupado agora</msg>
+					<msg>mais tarde conversamos</msg>
+					<msg>to resolvendo umas coisas</msg>
+				</group>
+			</context>
+
+			<context id="COMBAT">
+				<group chance="80">
+					<msg>to em pvp agora</msg>
+					<msg>me chama depois</msg>
+					<msg>to brigando aqui</msg>
+					<msg>to em fight</msg>
+					<msg>agora nao da</msg>
+					<msg>depois respondo</msg>
+				</group>
+</context>
+
+		<context id="CITY">
+		
+			<!-- Conversa trivial / presença -->
+			<group chance="25">
+				<msg>to em giran</msg>
+				<msg>to na city</msg>
+				<msg>acabei de chegar em giran</msg>
+				<msg>parado aqui na cidade</msg>
+				<msg>to dando uma olhada no mercado</msg>
+			</group>
+		
+			<!-- Comércio básico -->
+			<group chance="20">
+				<msg>to vendendo umas coisas</msg>
+				<msg>organizando inventario</msg>
+				<msg>vendo item barato na giran</msg>
+				<msg>alguem comprando adena?</msg>
+				<msg>mercado hoje ta fraco</msg>
+			</group>
+		
+			<!-- Craft / Dwarf / sistema -->
+			<group chance="12">
+				<msg>procuro crafter</msg>
+				<msg>anão ta sumido hoje</msg>
+				<msg>craft ta caro demais</msg>
+				<msg>alguem faz recipe?</msg>
+				<msg>to tentando montar set</msg>
+			</group>
+		
+			<!-- Party / social -->
+			<group chance="10">
+				<msg>alguem pra pt?</msg>
+				<msg>tem pt up?</msg>
+				<msg>chama pra pt ai</msg>
+				<msg>pt full ja?</msg>
+				<msg>so falta um healer</msg>
+			</group>
+		
+			<!-- Gameplay / spots -->
+			<group chance="8">
+				<msg>onde ta bom pra upar?</msg>
+				<msg>cruma ta lotado</msg>
+				<msg>toa ta valendo a pena?</msg>
+				<msg>catacomb hoje ta cheia</msg>
+				<msg>farm ta disputado</msg>
+			</group>
+		
+			<!-- Nostalgia Interlude -->
+			<group chance="7">
+				<msg>interlude raiz demais</msg>
+				<msg>esse c6 lembra os velhos tempos</msg>
+				<msg>saudade do l2 antigo</msg>
+				<msg>interlude nunca morre</msg>
+				<msg>isso sim é lineage</msg>
+			</group>
+		
+			<!-- Sistema / servidor -->
+			<group chance="6">
+				<msg>server ta liso</msg>
+				<msg>sem lag ate agora</msg>
+				<msg>curtindo o server</msg>
+				<msg>ta bem balanceado</msg>
+				<msg>xp ta ok</msg>
+			</group>
+		
+			<!-- PvP / clã -->
+			<group chance="5">
+				<msg>pvp ontem foi bom</msg>
+				<msg>clan ta recrutando</msg>
+				<msg>tem guerra hoje?</msg>
+				<msg>aden vai pegar fogo</msg>
+				<msg>rival apareceu cedo</msg>
+			</group>
+		
+			<!-- Comentários raros / flavor -->
+			<group chance="4">
+				<msg>giran cheia hoje</msg>
+				<msg>muita gente online</msg>
+				<msg>movimento bom na city</msg>
+				<msg>ta parecendo server antigo</msg>
+				<msg>city viva assim é raro</msg>
+			</group>
+		
+			<!-- Muito raros / assinatura -->
+			<group chance="3">
+				<msg>interlude c6 é outra coisa</msg>
+				<msg>l2 de verdade é assim</msg>
+				<msg>isso aqui lembra lan house</msg>
+				<msg>quem viveu sabe</msg>
+				<msg>bons tempos voltaram</msg>
+			</group>
+		
+		</context>
+		
+
+			<context id="FARM">
+				<group chance="70">
+					<msg>to farmando</msg>
+					<msg>drop ta ruim hoje</msg>
+					<msg>upando lvl</msg>
+					<msg>to catando drop</msg>
+					<msg>farm infinito</msg>
+					<msg>so no grind</msg>
+				</group>
+			</context>
+		</language>
+
+<language id="en_GB">
+			<context id="ANY">
+				<group chance="60">
+					<msg>hi</msg>
+					<msg>hey</msg>
+					<msg>yo</msg>
+					<msg>hello</msg>
+					<msg>sup</msg>
+					<msg>how are you?</msg>
+				</group>
+				<group chance="40">
+					<msg>busy right now</msg>
+					<msg>talk later</msg>
+					<msg>cant now</msg>
+					<msg>maybe later</msg>
+				</group>
+			</context>
+
+			<context id="COMBAT">
+				<group chance="80">
+					<msg>in pvp now</msg>
+					<msg>cant talk</msg>
+					<msg>fighting atm</msg>
+					<msg>busy with pvp</msg>
+				</group>
+			</context>
+
+			<context id="CITY">
+			
+					<group chance="25">
+						<msg>im in giran</msg>
+						<msg>im in the city</msg>
+						<msg>just arrived in giran</msg>
+						<msg>standing around in town</msg>
+						<msg>checking the market</msg>
+					</group>
+			
+					<group chance="20">
+						<msg>selling some stuff</msg>
+						<msg>organizing inventory</msg>
+						<msg>selling cheap items in giran</msg>
+						<msg>anyone buying adena?</msg>
+						<msg>market feels slow today</msg>
+					</group>
+			
+					<group chance="12">
+						<msg>looking for crafter</msg>
+						<msg>no dwarf around?</msg>
+						<msg>craft is too expensive</msg>
+						<msg>anyone can make recipe?</msg>
+						<msg>trying to finish my set</msg>
+					</group>
+			
+					<group chance="10">
+						<msg>anyone for pt?</msg>
+						<msg>pt for leveling?</msg>
+						<msg>invite me to party</msg>
+						<msg>party full already?</msg>
+						<msg>need a healer</msg>
+					</group>
+			
+					<group chance="8">
+						<msg>best place to exp?</msg>
+						<msg>cruma is crowded</msg>
+						<msg>is toa worth it?</msg>
+						<msg>catacombs are full</msg>
+						<msg>farm is contested</msg>
+					</group>
+			
+					<group chance="7">
+						<msg>interlude is pure old school</msg>
+						<msg>this c6 brings memories</msg>
+						<msg>missed the old l2</msg>
+						<msg>interlude never dies</msg>
+						<msg>this is real lineage</msg>
+					</group>
+			
+					<group chance="6">
+						<msg>server feels smooth</msg>
+						<msg>no lag so far</msg>
+						<msg>enjoying the server</msg>
+						<msg>good balance overall</msg>
+						<msg>exp rate feels right</msg>
+					</group>
+			
+					<group chance="5">
+						<msg>pvp yesterday was good</msg>
+						<msg>clan is recruiting</msg>
+						<msg>any war today?</msg>
+						<msg>aden will be hot</msg>
+						<msg>rival showed up early</msg>
+					</group>
+			
+					<group chance="4">
+						<msg>giran is packed</msg>
+						<msg>lots of players online</msg>
+						<msg>city feels alive</msg>
+						<msg>feels like old server</msg>
+						<msg>rare to see city like this</msg>
+					</group>
+			
+					<group chance="3">
+						<msg>interlude c6 hits different</msg>
+						<msg>this is real l2</msg>
+						<msg>reminds me of lan houses</msg>
+						<msg>if you lived it you know</msg>
+						<msg>good old times are back</msg>
+					</group>
+			
+				</context>
+
+			<context id="FARM">
+				<group chance="70">
+					<msg>farming now</msg>
+					<msg>bad drops today</msg>
+					<msg>exp grind</msg>
+					<msg>still farming</msg>
+				</group>
+			</context>
+</language>
+
+<language id="es_ES">
+			<context id="ANY">
+				<group chance="60">
+					<msg>hola</msg>
+					<msg>que tal</msg>
+					<msg>buenas</msg>
+					<msg>todo bien?</msg>
+				</group>
+				<group chance="40">
+					<msg>estoy ocupado</msg>
+					<msg>hablamos luego</msg>
+					<msg>despues te digo</msg>
+				</group>
+			</context>
+
+			<context id="COMBAT">
+				<group chance="80">
+					<msg>estoy en pvp</msg>
+					<msg>no puedo ahora</msg>
+					<msg>peleando ahora</msg>
+				</group>
+			</context>
+			<context id="CITY">
+			
+				<group chance="25">
+					<msg>estoy en giran</msg>
+					<msg>estoy en la city</msg>
+					<msg>recién llegué a giran</msg>
+					<msg>parado acá en la ciudad</msg>
+					<msg>mirando el mercado</msg>
+				</group>
+			
+				<group chance="20">
+					<msg>vendiendo algunas cosas</msg>
+					<msg>ordenando inventario</msg>
+					<msg>vendo items baratos en giran</msg>
+					<msg>alguien compra adena?</msg>
+					<msg>el mercado está flojo hoy</msg>
+				</group>
+			
+				<group chance="12">
+					<msg>busco crafter</msg>
+					<msg>no hay dwarf hoy?</msg>
+					<msg>craft muy caro</msg>
+					<msg>alguien hace recipe?</msg>
+					<msg>armando set poco a poco</msg>
+				</group>
+			
+				<group chance="10">
+					<msg>alguien para pt?</msg>
+					<msg>hay pt para subir?</msg>
+					<msg>inviten a party</msg>
+					<msg>pt ya full?</msg>
+					<msg>falta healer</msg>
+				</group>
+			
+				<group chance="8">
+					<msg>donde rinde up?</msg>
+					<msg>cruma está lleno</msg>
+					<msg>toa vale la pena?</msg>
+					<msg>catacumba llena hoy</msg>
+					<msg>mucho farm disputado</msg>
+				</group>
+			
+				<group chance="7">
+					<msg>interlude bien old school</msg>
+					<msg>este c6 trae recuerdos</msg>
+					<msg>extrañaba el l2 viejo</msg>
+					<msg>interlude nunca muere</msg>
+					<msg>esto sí es lineage</msg>
+				</group>
+			
+				<group chance="6">
+					<msg>server va fluido</msg>
+					<msg>sin lag por ahora</msg>
+					<msg>me gusta el server</msg>
+					<msg>buen balance</msg>
+					<msg>la exp está bien</msg>
+				</group>
+			
+				<group chance="5">
+					<msg>el pvp ayer estuvo bueno</msg>
+					<msg>clan reclutando</msg>
+					<msg>hay guerra hoy?</msg>
+					<msg>aden va a explotar</msg>
+					<msg>el rival apareció temprano</msg>
+				</group>
+			
+				<group chance="4">
+					<msg>giran está llena</msg>
+					<msg>mucha gente online</msg>
+					<msg>buen movimiento en la city</msg>
+					<msg>parece server viejo</msg>
+					<msg>city viva así es raro</msg>
+				</group>
+			
+				<group chance="3">
+					<msg>interlude c6 es otra cosa</msg>
+					<msg>l2 de verdad es así</msg>
+					<msg>me recuerda a los cibers</msg>
+					<msg>el que vivió sabe</msg>
+					<msg>volvieron los buenos tiempos</msg>
+				</group>
+			
+			</context>
+			<context id="FARM">
+				<group chance="70">
+					<msg>farmeando ahora</msg>
+					<msg>mal drop hoy</msg>
+					<msg>subiendo nivel</msg>
+				</group>
+			</context>
+</language>
+	</chat>
+
+</list>

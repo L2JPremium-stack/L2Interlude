@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<zone name="Forbidden Cemetery" intervalMinutes="1" enabled="true">
+		<spawn mobId="53027" x="190952" y="21416" z="-3664" />
+		<spawn mobId="53027" x="190568" y="21192" z="-3664" />
+		<spawn mobId="53027" x="190408" y="20970" z="-3664" />
+		<spawn mobId="53027" x="189686" y="20991" z="-3664" />
+		<spawn mobId="53027" x="189560" y="20984" z="-3664" />
+		<spawn mobId="53027" x="188762" y="20573" z="-3712" />
+		<spawn mobId="53027" x="188314" y="20893" z="-3676" />
+		<spawn mobId="53027" x="187860" y="21269" z="-3637" />
+		<spawn mobId="53027" x="187912" y="21678" z="-3632" />
+		<spawn mobId="53027" x="188020" y="22180" z="-3646" />
+		<spawn mobId="53027" x="187982" y="22673" z="-3661" />
+		<spawn mobId="53027" x="187944" y="22776" z="-3656" />
+		<spawn mobId="53027" x="187568" y="22968" z="-3643" />
+	</zone>
+	<zone name="Silent Valley" intervalMinutes="1" enabled="false">
+		<spawn mobId="53027" x="179880" y="52984" z="-5976" />
+		<spawn mobId="53027" x="180088" y="52840" z="-5984" />
+		<spawn mobId="53027" x="180361" y="52566" z="-5980" />
+		<spawn mobId="53027" x="180875" y="52067" z="-5990" />
+		<spawn mobId="53027" x="181270" y="52005" z="-6010" />
+		<spawn mobId="53027" x="181780" y="51943" z="-6030" />
+		<spawn mobId="53027" x="182120" y="51537" z="-6038" />
+		<spawn mobId="53027" x="182255" y="51183" z="-6021" />
+		<spawn mobId="53027" x="182657" y="50682" z="-6008" />
+		<spawn mobId="53027" x="183002" y="50300" z="-6008" />
+		<spawn mobId="53027" x="183372" y="49942" z="-6008" />
+		<spawn mobId="53027" x="184165" y="49287" z="-6017" />
+		<spawn mobId="53027" x="184563" y="49056" z="-6017" />
+		<spawn mobId="53027" x="185040" y="48865" z="-6023" />
+		<spawn mobId="53027" x="185352" y="48776" z="-6032" />
+		<spawn mobId="53027" x="185560" y="48872" z="-6016" />
+		<spawn mobId="53027" x="185941" y="48821" z="-5983" />
+		<spawn mobId="53027" x="186040" y="48808" z="-5976" />
+		<spawn mobId="53027" x="186394" y="48656" z="-5951" />
+		<spawn mobId="53027" x="187000" y="48566" z="-5924" />
+		<spawn mobId="53027" x="187144" y="48552" z="-5920" />
+		<spawn mobId="53027" x="187240" y="49032" z="-5920" />
+		<spawn mobId="53027" x="187304" y="49576" z="-5896" />
+		<spawn mobId="53027" x="187176" y="50056" z="-5880" />
+		<spawn mobId="53027" x="186998" y="50398" z="-5880" />
+		<spawn mobId="53027" x="186600" y="50864" z="-5888" />
+	</zone>
+	<zone name="Ivory Tower" intervalMinutes="1" enabled="true">
+		<spawn mobId="53027" x="81528" y="14952" z="-5288" />
+		<spawn mobId="53027" x="81471" y="15334" z="-5288" />
+		<spawn mobId="53027" x="81558" y="15832" z="-5288" />
+		<spawn mobId="53027" x="81739" y="16713" z="-5286" />
+		<spawn mobId="53027" x="81783" y="16967" z="-5282" />
+		<spawn mobId="53027" x="81800" y="17064" z="-5280" />
+	</zone>
+</list>

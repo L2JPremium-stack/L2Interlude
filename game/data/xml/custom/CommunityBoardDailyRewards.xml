@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dailyRewards>
+
+    <!--
+        GLOBAL SETTINGS
+    -->
+    <settings cooldownHours="24" maxStreak="14" resetOnMissedDay="false" gracePeriodHours="48"/>
+
+    <!-- ========================================================= -->
+    <!-- DAY 1 - Adena -->
+    <!-- ========================================================= -->
+    <day value="1">
+        <reward itemId="57" count="1000000" enchant="0" sound="ItemSound.quest_finish"/>
+        <mission monsterKills="20"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 2 - Scroll of Escape -->
+    <!-- ========================================================= -->
+    <day value="2">
+        <reward itemId="736" count="20" enchant="0" sound="ItemSound.quest_middle"/>
+        <mission playTimeMinutes="60" monsterKills="100"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 3 - Greater Healing Potion -->
+    <!-- ========================================================= -->
+    <day value="3">
+        <reward itemId="1539" count="50" enchant="0" sound="ItemSound.quest_finish"/>
+        <mission playTimeMinutes="90" monsterKills="200"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 4 - Blessed Scroll of Escape -->
+    <!-- ========================================================= -->
+    <day value="4">
+        <reward itemId="3958" count="10" enchant="0" sound="ItemSound.quest_middle"/>
+        <mission playTimeMinutes="120" monsterKills="300"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 5 - Soulshot: No Grade -->
+    <!-- ========================================================= -->
+    <day value="5">
+        <reward itemId="1835" count="5000" enchant="0" sound="ItemSound.quest_finish"/>
+        <mission playTimeMinutes="180" monsterKills="500"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 6 - Spiritshot: No Grade -->
+    <!-- ========================================================= -->
+    <day value="6">
+        <reward itemId="2509" count="5000" enchant="0" sound="ItemSound.quest_finish"/>
+        <mission playTimeMinutes="240" monsterKills="800"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 7 - Enchant Weapon D -->
+    <!-- ========================================================= -->
+    <day value="7">
+        <reward itemId="955" count="3" enchant="0" sound="ItemSound3.sys_enchant_success"/>
+        <mission playTimeMinutes="300" monsterKills="1000"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 8 - Enchant Armor D -->
+    <!-- ========================================================= -->
+    <day value="8">
+        <reward itemId="951" count="5" enchant="0" sound="ItemSound3.sys_enchant_success"/>
+        <mission playTimeMinutes="360" monsterKills="1200"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 9 - Quick Healing Potion -->
+    <!-- ========================================================= -->
+    <day value="9">
+        <reward itemId="1540" count="30" enchant="0" sound="ItemSound.quest_middle"/>
+        <mission playTimeMinutes="420" monsterKills="1500"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 10 - Blessed Spiritshot: No Grade -->
+    <!-- ========================================================= -->
+    <day value="10">
+        <reward itemId="3947" count="3000" enchant="0" sound="ItemSound.quest_finish"/>
+        <mission playTimeMinutes="480" monsterKills="1800"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 11 - Blessed Soulshot: No Grade -->
+    <!-- ========================================================= -->
+    <day value="11">
+        <reward itemId="3948" count="3000" enchant="0" sound="ItemSound.quest_finish"/>
+        <mission playTimeMinutes="540" monsterKills="2200"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 12 - Greater CP Potion -->
+    <!-- ========================================================= -->
+    <day value="12">
+        <reward itemId="5592" count="100" enchant="0" sound="ItemSound.quest_middle"/>
+        <mission playTimeMinutes="600" monsterKills="2600"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 13 - Gold Bar -->
+    <!-- ========================================================= -->
+    <day value="13">
+        <reward itemId="3470" count="20" enchant="0" sound="ItemSound.quest_finish"/>
+        <mission playTimeMinutes="720" monsterKills="3200"/>
+    </day>
+
+    <!-- ========================================================= -->
+    <!-- DAY 14 - Draconic Bow -->
+    <!-- ========================================================= -->
+    <day value="14">
+        <reward itemId="7575" count="1" enchant="10" sound="ItemSound3.sys_special_item_sound"/>
+        <mission playTimeMinutes="900" monsterKills="5000"/>
+    </day>
+
+</dailyRewards>

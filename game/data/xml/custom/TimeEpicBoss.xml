@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bosses>
+    <!--
+      Configuração de respawn Somente Raid bosses por dia da semana e horário.
+      O atributo day deve conter o nome do dia da semana em inglês, sempre maiúsculo:
+      
+      MONDAY    - Segunda-feira
+      TUESDAY   - Terça-feira
+      WEDNESDAY - Quarta-feira
+      THURSDAY  - Quinta-feira
+      FRIDAY    - Sexta-feira
+      SATURDAY  - Sábado
+      SUNDAY    - Domingo
+    -->
+
+   <!-- Baium -->
+    <boss id="29020">
+        <respawn day="FRIDAY" time="23:26" />
+        <respawn day="FRIDAY" time="23:27" />
+		<respawn day="FRIDAY" time="23:28" />
+    </boss>
+
+    <!-- Antharas -->
+    <boss id="29019">
+        <respawn day="MONDAY" time="20:00" />
+        <respawn day="THURSDAY" time="20:00" />
+    </boss>
+
+    <!-- Valakas -->
+    <boss id="29028">
+        <respawn day="TUESDAY" time="20:00" />
+        <respawn day="FRIDAY" time="20:00" />
+    </boss>
+
+    <!-- Core -->
+    <boss id="29006">
+        <respawn day="WEDNESDAY" time="20:00" />
+        <respawn day="SATURDAY" time="20:00" />
+    </boss>
+
+    <!-- Orfen -->
+    <boss id="29014">
+        <respawn day="TUESDAY" time="19:00" />
+        <respawn day="FRIDAY" time="19:00" />
+    </boss>
+
+    <!-- Queen Ant -->
+    <boss id="29001">
+        <respawn day="MONDAY" time="19:00" />
+        <respawn day="FRIDAY" time="19:00" />
+    </boss>
+
+    <!-- Zaken -->
+    <boss id="29022">
+        <respawn day="WEDNESDAY" time="20:30" />
+        <respawn day="SATURDAY" time="20:30" />
+    </boss>
+
+    <!-- Sailren -->
+    <boss id="29065">
+        <respawn day="SUNDAY" time="21:00" />
+        <respawn day="THURSDAY" time="20:30" />
+    </boss>
+
+    <!-- Frintezza -->
+    <boss id="29047">
+        <respawn day="FRIDAY" time="22:00" />
+        <respawn day="SUNDAY" time="22:00" />
+    </boss>
+</bosses>

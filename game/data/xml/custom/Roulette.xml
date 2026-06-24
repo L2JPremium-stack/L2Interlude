@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<!-- Weapons S Grade -->
+	<reward id="1" itemId="7577" enchant="12" count="1" chance="10"/>	<!-- Draconic Bow [Focus] -->
+	<reward id="2" itemId="6580" enchant="12" count="1" chance="15"/>	<!-- Tallum Blade*Dark Legion's Edge -->
+	<reward id="3" itemId="6604" enchant="12" count="1" chance="15"/>	<!-- Demon Splinter [Crt. Stun] -->
+	<reward id="4" itemId="6601" enchant="12" count="1" chance="15"/>	<!-- Saint Spear [Haste] -->
+	<reward id="5" itemId="6594" enchant="12" count="1" chance="10"/>	<!-- Shining Bow [Focus] -->
+	<reward id="6" itemId="6590" enchant="12" count="1" chance="15"/>	<!-- Angel Slayer [Crt. Damage] -->
+	<reward id="7" itemId="6587" enchant="12" count="1" chance="15"/>	<!-- Imperial Staff [Empower] -->
+	<reward id="8" itemId="6585" enchant="12" count="1" chance="15"/>	<!-- Basalt Battlehammer [Health] -->
+	<reward id="9" itemId="6608" enchant="12" count="1" chance="10"/>	<!-- Arcana Mace [Acumen] -->
+	<reward id="10" itemId="6583" enchant="12" count="1" chance="15"/>	<!-- Forgotten Blade [Focus] -->
+	<reward id="11" itemId="6607" enchant="12" count="1" chance="15"/>	<!-- Heaven's Divider [Focus] -->
+	<!-- Jewels S Grade -->
+	<reward id="12" itemId="858" enchant="12" count="1" chance="30"/>	<!--  Tateossian Earring   -->
+	<reward id="13" itemId="889" enchant="12" count="1" chance="30"/>	<!--  Tateossian Ring  -->
+	<reward id="14" itemId="920" enchant="12" count="1" chance="30"/>	<!--  Tateossian Necklace   -->
+	<!-- Jewels Boss -->
+	<reward id="15" itemId="6657" enchant="12" count="1" chance="3"/>	<!--  Necklace of Valakas   -->
+	<reward id="16" itemId="6658" enchant="12" count="1" chance="3"/>	<!--  Ring of Baium   -->
+	<reward id="17" itemId="6659" enchant="12" count="1" chance="5"/>	<!--  Zaken's Earring   -->
+	<reward id="18" itemId="6660" enchant="12" count="1" chance="5"/>	<!--  Ring of Queen Ant   -->
+	<reward id="19" itemId="6661" enchant="12" count="1" chance="5"/>	<!--  Earring of Orfen   -->
+	<reward id="20" itemId="6662" enchant="12" count="1" chance="5"/>	<!--  Ring of Core   -->
+	<reward id="21" itemId="6656" enchant="12" count="1" chance="3"/>	<!--  Earring of Antharas   -->
+	<reward id="22" itemId="8191" enchant="12" count="1" chance="5"/>	<!--  Frintezza's Necklace   -->
+	<!-- Consumables -->
+	<reward id="23" itemId="5591" enchant="0" count="1000" chance="85"/>	<!--  CP Potion  -->
+	<reward id="24" itemId="5592" enchant="0" count="1000" chance="85"/>	<!--  Greater CP Potion  -->
+</list>

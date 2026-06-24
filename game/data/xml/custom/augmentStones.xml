@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+   <augment type="PASSIVE" title="Reflect Damage" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3259" level="3"/>
+    </augment>
+
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+   <augment type="ACTIVE" title="Focus: Active" icon="L2UI_JDEV.PurchaseIcon">
+        <price itemId="3470" count="1"/>
+        <skill id="3141" level="4"/>
+    </augment>
+
+</list>

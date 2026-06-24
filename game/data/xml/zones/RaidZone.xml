@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<zone type="RaidZone" shape='Cylinder' minZ='-9000' maxZ='-5100' rad='3000'> <!-- Core Boss TODO By AlooK -->
+	<node X="17720" Y="110376" />
+	<stat name="EnableLevelLimite" val="true" />
+	<stat name="LimiteLv" val="52" />
+	<stat name="checkClan" val="true" />
+	<stat name="checkAlly" val="true" />
+	<stat name="checkParty" val="true" />
+	<stat name="MaxClanMembers" val="18" />
+	<stat name="MaxAllyMembers" val="18" />
+	<stat name="MinPartyMembers" val="2" />
+</zone>
+
+	<zone type="RaidZone" shape="NPoly" minZ="-5796" maxZ="-3796"><!-- Orfen Boss TODO By AlooK -->
+		<node X="43976" Y="24664" />
+		<node X="43284" Y="18952" />
+		<node X="42476" Y="18164" />
+		<node X="42480" Y="16448" />
+		<node X="43084" Y="15944" />
+		<node X="45140" Y="15816" />
+		<node X="48800" Y="15112" />
+		<node X="56556" Y="12040" />
+		<node X="59068" Y="14288" />
+		<node X="61064" Y="18492" />
+		<node X="60380" Y="23672" />
+		<node X="58724" Y="27412" />
+		<node X="55696" Y="28496" />
+		<node X="43976" Y="24664" />
+		<stat name="EnableLevelLimite" val="true" />
+		<stat name="LimiteLv" val="58" />
+		<stat name="checkClan" val="true" />
+	    <stat name="checkAlly" val="true" />
+		<stat name="checkParty" val="true" />
+		<stat name="MaxClanMembers" val="18" />
+		<stat name="MaxAllyMembers" val="18" />
+		<stat name="MinPartyMembers" val="2" />
+	</zone>
+	
+	<zone id="110000" type="RaidZone" shape="NPoly" minZ="-4815" maxZ="-315"><!-- Zaken Boss -->
+	<node X="50797" Y="213515" />
+	<node X="57617" Y="213510" />
+	<node X="57669" Y="221683" />
+	<node X="50773" Y="221632" />
+	<stat name="EnableLevelLimite" val="true" />
+	<stat name="LimiteLv" val="61" />
+	<stat name="checkClan" val="true" />
+	<stat name="checkAlly" val="true" />
+	<stat name="checkParty" val="true" />
+	<stat name="MaxClanMembers" val="18" />
+	<stat name="MaxAllyMembers" val="18" />
+	<stat name="MinPartyMembers" val="2" />
+	</zone>
+	
+	<zone id="110017" type="RaidZone" shape='Cylinder' minZ='-6296' maxZ='-4296' rad='15000'> <!-- Novo Queen ant toda flagzone -->
+	<node X="-15096" Y="178536" />
+	<stat name="EnableLevelLimite" val="true" />
+	<stat name="LimiteLv" val="40" />
+	<stat name="checkClan" val="true" />
+	<stat name="checkAlly" val="true" />
+	<stat name="checkParty" val="true" />
+	<stat name="MaxClanMembers" val="18" />
+	<stat name="MaxAllyMembers" val="18" />
+	<stat name="MinPartyMembers" val="2" />
+</zone>
+</list>

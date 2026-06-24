@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rankingRewards>
+			<reward Day="1">
+		<item itemId="6392" amount="2" enchantLevel="0"/>
+	</reward>
+			<reward Day="2">
+		<item itemId="3470" amount="10" enchantLevel="0"/>
+	</reward>
+			<reward Day="3">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="4">
+		<item itemId="57" amount="10" enchantLevel="0"/>
+	</reward>
+			<reward Day="5">
+		<item itemId="57" amount="5" enchantLevel="0"/>
+	</reward>
+			<reward Day="6">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="7">
+		<item itemId="57" amount="20" enchantLevel="0"/>
+	</reward>
+			<reward Day="8">
+		<item itemId="57" amount="20" enchantLevel="0"/>
+	</reward>
+			<reward Day="9">
+		<item itemId="57" amount="10" enchantLevel="0"/>
+	</reward>
+			<reward Day="10">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="11">
+		<item itemId="57" amount="15" enchantLevel="0"/>
+	</reward>
+			<reward Day="12">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="13">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="14">
+		<item itemId="57" amount="100" enchantLevel="0"/>
+	</reward>
+			<reward Day="15">
+		<item itemId="57" amount="25" enchantLevel="0"/>
+	</reward>
+			<reward Day="16">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="17">
+		<item itemId="57" amount="25" enchantLevel="0"/>
+	</reward>
+			<reward Day="18">
+		<item itemId="57" amount="200" enchantLevel="0"/>
+	</reward>
+			<reward Day="19">
+		<item itemId="57" amount="10" enchantLevel="0"/>
+	</reward>
+			<reward Day="20">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="21">
+		<item itemId="57" amount="20" enchantLevel="0"/>
+	</reward>
+			<reward Day="22">
+		<item itemId="57" amount="30" enchantLevel="0"/>
+	</reward>		
+			<reward Day="23">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="24">
+		<item itemId="57" amount="30" enchantLevel="0"/>
+	</reward>
+			<reward Day="25">
+		<item itemId="57" amount="400" enchantLevel="0"/>
+	</reward>
+			<reward Day="26">
+		<item itemId="57" amount="20" enchantLevel="0"/>
+	</reward>
+			<reward Day="27">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="28">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="29">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+			<reward Day="30">
+		<item itemId="57" amount="1" enchantLevel="0"/>
+	</reward>
+	
+</rankingRewards>

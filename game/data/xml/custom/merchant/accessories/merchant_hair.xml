@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merchantList category="accessories" grade="HAIR">
+	<!-- Demon Homs -->
+    <merchant product="8187-1" ingredient="" />
+	<!-- Little Angel Wings -->
+    <merchant product="8188-1" ingredient="" />
+
+</merchantList>

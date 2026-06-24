@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<zone type="FlagZone" shape="Cuboid" minZ="-3850" maxZ="-350"><!-- giran_pvp_battle -->
+		<stat name="id" val="2" />
+		<stat name="name" val="Giran Arena" />
+		<stat name="reviveLoc" val="73016,142136,-3768;72984,143384,-3768" />
+		<stat name="activeTime" val="300" /> <!-- segundos -->
+		<stat name="checkClasses" val="true" /> <!-- Bloquear classes determinadas?. -->
+		<stat name="BlockClasses" val="16,97" /> <!-- IDS das classes que serao explusas ao entra na zona. -->
+		<node X="72493" Y="142263" />
+		<node X="73493" Y="143261" />
+	</zone>
+</list>

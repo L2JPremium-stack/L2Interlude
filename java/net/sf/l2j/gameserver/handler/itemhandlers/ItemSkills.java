@@ -1,0 +1,156 @@
+package net.sf.l2j.gameserver.handler.itemhandlers;
+
+import net.sf.l2j.Config;
+import net.sf.l2j.gameserver.ai.CtrlIntention;
+import net.sf.l2j.gameserver.handler.IItemHandler;
+import net.sf.l2j.gameserver.model.L2Skill;
+import net.sf.l2j.gameserver.model.actor.Playable;
+import net.sf.l2j.gameserver.model.actor.Player;
+import net.sf.l2j.gameserver.model.actor.instance.L2PetInstance;
+import net.sf.l2j.gameserver.model.actor.instance.L2SummonInstance;
+import net.sf.l2j.gameserver.model.holder.IntIntHolder;
+import net.sf.l2j.gameserver.model.item.instance.ItemInstance;
+import net.sf.l2j.gameserver.model.item.type.EtcItemType;
+import net.sf.l2j.gameserver.network.SystemMessageId;
+import net.sf.l2j.gameserver.network.serverpackets.ExUseSharedGroupItem;
+import net.sf.l2j.gameserver.network.serverpackets.SystemMessage;
+
+/**
+ * Template for item skills handler.
+ */
+public class ItemSkills implements IItemHandler
+{
+	@Override
+	public void useItem(Playable playable, ItemInstance item, boolean forceUse)
+	{
+		if (playable instanceof L2SummonInstance)
+			return;
+		
+		final boolean isPet = playable instanceof L2PetInstance;
+		final Player activeChar = playable.getActingPlayer();
+		final int itemId = item.getItemId(); // <- Adicionado para facilitar o uso
+		
+		// Pets can only use tradable items.
+		if (isPet && !item.isTradable())
+		{
+			activeChar.sendPacket(SystemMessageId.ITEM_NOT_FOR_PETS);
+			return;
+		}
+		if (activeChar.isSitting() && !item.isPotion())
+		{
+			activeChar.sendPacket(SystemMessageId.CANT_MOVE_SITTING);
+			return;
+		}
+		final IntIntHolder[] skills = item.getEtcItem().getSkills();
+		if (skills == null)
+		{
+			_log.info(item.getName() + " does not have registered any skill for handler.");
+			return;
+		}
+		
+		for (IntIntHolder skillInfo : skills)
+		{
+			if (skillInfo == null)
+				continue;
+			
+			final L2Skill itemSkill = skillInfo.getSkill();
+			if (itemSkill == null)
+				continue;
+			
+			if (!itemSkill.checkCondition(playable, playable.getTarget(), false))
+				return;
+			
+			if (playable.isSkillDisabled(itemSkill))
+				return;
+			
+			if (!itemSkill.isPotion() && playable.isCastingNow())
+				return;
+			
+			// Item consumption is setup here.
+			if (itemSkill.isPotion() || itemSkill.isSimultaneousCast())
+			{
+				if (!item.isHerb())
+				{
+					if (!Config.ITEMS_NO_CONSUME.contains(itemId)) // <- VERIFICAÇÃO ADICIONADA
+					{
+						if (!playable.destroyItem("Consume", item.getObjectId(), (itemSkill.getItemConsumeId() == 0 && itemSkill.getItemConsume() > 0) ? itemSkill.getItemConsume() : 1, null, false))
+						{
+							activeChar.sendPacket(SystemMessageId.NOT_ENOUGH_ITEMS);
+							return;
+						}
+					}
+				}
+				
+				playable.doSimultaneousCast(itemSkill);
+				if (!isPet && item.getItemType() == EtcItemType.HERB && activeChar.hasServitor())
+					activeChar.getPet().doSimultaneousCast(itemSkill);
+			}
+			else
+			{
+				if (!Config.ITEMS_NO_CONSUME.contains(itemId)) // <- VERIFICAÇÃO ADICIONADA
+				{
+					if (!playable.destroyItem("Consume", item.getObjectId(), (itemSkill.getItemConsumeId() == 0 && itemSkill.getItemConsume() > 0) ? itemSkill.getItemConsume() : 1, null, false))
+					{
+						activeChar.sendPacket(SystemMessageId.NOT_ENOUGH_ITEMS);
+						return;
+					}
+				}
+				
+				playable.getAI().setIntention(CtrlIntention.IDLE);
+				if (!playable.useMagic(itemSkill, forceUse, false))
+					return;
+			}
+			
+			// Send message to owner.
+			if (isPet)
+				activeChar.sendPacket(SystemMessage.getSystemMessage(SystemMessageId.PET_USES_S1).addSkillName(itemSkill));
+			else
+			{
+				final int skillId = skillInfo.getId();
+				
+				switch (skillId)
+				{
+					case 2031:
+					case 2032:
+					case 2037:
+						final int buffId = activeChar.getShortBuffTaskSkillId();
+						
+						if (skillId == 2037)
+							activeChar.shortBuffStatusUpdate(skillId, skillInfo.getValue(), itemSkill.getBuffDuration() / 1000);
+						else if (skillId == 2032 && buffId != 2037)
+							activeChar.shortBuffStatusUpdate(skillId, skillInfo.getValue(), itemSkill.getBuffDuration() / 1000);
+						else
+						{
+							if (buffId != 2037 && buffId != 2032)
+								activeChar.shortBuffStatusUpdate(skillId, skillInfo.getValue(), itemSkill.getBuffDuration() / 1000);
+						}
+						break;
+				}
+			}
+			
+			// Reuse.
+			int reuseDelay = itemSkill.getReuseDelay();
+			if (item.isEtcItem())
+			{
+				if (item.getEtcItem().getReuseDelay() > reuseDelay)
+					reuseDelay = item.getEtcItem().getReuseDelay();
+				
+				playable.addTimeStamp(itemSkill, reuseDelay);
+				if (reuseDelay != 0)
+					playable.disableSkill(itemSkill, reuseDelay);
+				
+				if (!isPet)
+				{
+					final int group = item.getEtcItem().getSharedReuseGroup();
+					if (group >= 0)
+						activeChar.sendPacket(new ExUseSharedGroupItem(item.getItemId(), group, reuseDelay, reuseDelay));
+				}
+			}
+			else if (reuseDelay > 0)
+			{
+				playable.addTimeStamp(itemSkill, reuseDelay);
+				playable.disableSkill(itemSkill, reuseDelay);
+			}
+		}
+	}
+}

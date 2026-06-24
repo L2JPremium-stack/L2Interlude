@@ -1,0 +1,10 @@
+# L2J Runtime / Generated
+/game/config/hexid.txt
+/game/cachedir/
+/game/log/
+/auth/log/
+/bin/
+*.cs
+game/config/hexid.txt
+game/config/other/hexid.txt
+game/data/xml/custom/adminaccesslevel/gm_list.xml

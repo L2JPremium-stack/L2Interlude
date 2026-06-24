@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <zone id="60000" maxZ="-2670" minZ="-4670" name="Forbidden Cemetery" rad="10000" shape="Cylinder" type="TimeFarmZone">
+        <node X="191078" Y="21770"/>
+        <stat name="InviteParty" val="true"/>
+        <stat name="NoDropProtection" val="true"/>
+        <stat name="BlockMultiplePlayers" val="false"/>
+		<stat name="LoseBuff" val="true"/> <!-- Adicionando a configuração para perder buff ao morrer -->
+		<stat name="EnabledZone" val="true"/> <!-- Ligar Zona especifica -->
+        <stat name="BlockedClasses" val="92"/>
+        <spawn X="190248" Y="19880" Z="-3720"/>
+        <spawn X="190680" Y="21384" Z="-3664"/>
+        <spawn X="190900" Y="21516" Z="-3664"/>
+        <spawn X="191256" Y="21672" Z="-3664"/>
+        <spawn X="191256" Y="21672" Z="-3664"/>
+        <spawn X="191480" Y="21896" Z="-3664"/>
+    </zone>
+
+    <zone id="60001" maxZ="-5024" minZ="-7024" name="Silent Valley" rad="10000" shape="Cylinder" type="TimeFarmZone">
+        <node X="181272" Y="52232"/>
+        <stat name="InviteParty" val="false"/>
+        <stat name="NoDropProtection" val="false"/>
+        <stat name="BlockMultiplePlayers" val="false"/>
+		<stat name="EnabledZone" val="false"/> <!-- Ligar Zona especifica -->
+		<stat name="LoseBuff" val="false"/> <!-- Adicionando a configuração para perder buff ao morrer -->
+        <stat name="BlockedClasses" val="88;89;90"/>
+        <spawn X="179543" Y="53776" Z="-6013"/>
+        <spawn X="180488" Y="52488" Z="-5984"/>
+        <spawn X="180760" Y="51992" Z="-5976"/>
+        <spawn X="181095" Y="51602" Z="-6001"/>
+        <spawn X="181592" Y="51336" Z="-6032"/>
+        <spawn X="182200" Y="51176" Z="-6024"/>
+        <spawn X="182200" Y="51176" Z="-6024"/>
+    </zone>
+
+    <zone id="60002" maxZ="-4256" minZ="-6256" name="Ivory Tower" rad="10000" shape="Cylinder" type="TimeFarmZone">
+        <node X="83048" Y="18040"/>
+        <stat name="InviteParty" val="false"/>
+        <stat name="NoDropProtection" val="false"/>
+        <stat name="BlockMultiplePlayers" val="false"/>
+		<stat name="EnabledZone" val="true"/> <!-- Ligar Zona especifica -->
+		<stat name="LoseBuff" val="false"/> <!-- Adicionando a configuração para perder buff ao morrer -->
+        <stat name="BlockedClasses" val="88;89;90"/>
+        <spawn X="81672" Y="14520" Z="-5288"/>
+        <spawn X="81752" Y="14808" Z="-5288"/>
+        <spawn X="81752" Y="15064" Z="-5288"/>
+        <spawn X="81800" Y="15352" Z="-5288"/>
+        <spawn X="81912" Y="15672" Z="-5288"/>
+        <spawn X="82056" Y="16024" Z="-5288"/>
+    </zone>
+
+</list>

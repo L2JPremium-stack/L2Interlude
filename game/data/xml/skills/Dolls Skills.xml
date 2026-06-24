@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="27501" levels="3" name="Antharas Doll">
+    <table name="#mAtk">1.02 1.04 1.06</table>
+    <table name="#pAtk">1.02 1.04 1.06</table>
+    <set name="magicLevel" val="1" />
+    <set name="target" val="TARGET_SELF" />
+    <set name="skillType" val="BUFF" />
+    <set name="operateType" val="OP_PASSIVE" />
+    <for>
+        <mul order="0x30" stat="mAtk" val="#mAtk"/>
+        <mul order="0x30" stat="pAtk" val="#pAtk"/>
+    </for>
+</skill>
+
+
+<skill id="27502" levels="3" name="Zaken Doll">
+    <table name="#mDef">1.02 1.04 1.06</table>
+    <table name="#pDef">1.02 1.04 1.06</table>
+    <set name="magicLevel" val="1" />
+    <set name="target" val="TARGET_SELF" />
+    <set name="skillType" val="BUFF" />
+    <set name="operateType" val="OP_PASSIVE" />
+    <for>
+        <mul order="0x30" stat="mDef" val="#mDef"/>
+        <mul order="0x30" stat="pDef" val="#pDef"/>
+    </for>
+</skill>
+
+<skill id="27503" levels="3" name="Queen Ant Doll">
+    <table name="#rCrit">1.02 1.04 1.06</table>
+    <table name="#mCrit">1.02 1.04 1.06</table>
+    <set name="magicLevel" val="1" />
+    <set name="target" val="TARGET_SELF" />
+    <set name="skillType" val="BUFF" />
+    <set name="operateType" val="OP_PASSIVE" />
+    <for>
+        <add order="0x40" stat="rCrit" val="#rCrit"/>
+        <add order="0x40" stat="mCritRate" val="#mCrit"/>
+    </for>
+</skill>
+
+<skill id="27504" levels="3" name="Baium Doll">
+    <table name="#pAtkSpd">1.02 1.04 1.06</table>
+    <table name="#mAtkSpd">1.02 1.04 1.06</table>
+    <set name="magicLevel" val="1" />
+    <set name="target" val="TARGET_SELF" />
+    <set name="skillType" val="BUFF" />
+    <set name="operateType" val="OP_PASSIVE" />
+    <for>
+        <mul order="0x30" stat="pAtkSpd" val="#pAtkSpd"/>
+        <mul order="0x30" stat="mAtkSpd" val="#mAtkSpd"/>
+    </for>
+</skill>
+
+<skill id="27505" levels="3" name="Frintezza Doll">
+    <table name="#maxHp">1.02 1.04 1.06</table>
+    <table name="#maxCp">1.02 1.04 1.06</table>
+    <table name="#maxMp">1.02 1.04 1.06</table>
+    <set name="magicLevel" val="1" />
+    <set name="target" val="TARGET_SELF" />
+    <set name="skillType" val="BUFF" />
+    <set name="operateType" val="OP_PASSIVE" />
+    <for>
+        <mul order="0x30" stat="maxHp" val="#maxHp"/>
+        <mul order="0x30" stat="maxCp" val="#maxCp"/>
+        <mul order="0x30" stat="maxMp" val="#maxMp"/>
+    </for>
+</skill>
+
+<skill id="27506" levels="3" name="Core Doll">
+    <table name="#INT">1 2 3</table>
+    <table name="#STR">1 2 3</table>
+    <set name="magicLevel" val="1" />
+    <set name="target" val="TARGET_SELF" />
+    <set name="skillType" val="BUFF" />
+    <set name="operateType" val="OP_PASSIVE" />
+    <for>
+        <add order="0x40" stat="INT" val="#INT"/>
+        <add order="0x40" stat="STR" val="#STR"/>
+    </for>
+</skill>
+
+<skill id="27507" levels="3" name="Orfen Doll">
+    <table name="#MEN">1 2 3</table>
+    <table name="#CON">1 2 3</table>
+    <set name="magicLevel" val="1" />
+    <set name="target" val="TARGET_SELF" />
+    <set name="skillType" val="BUFF" />
+    <set name="operateType" val="OP_PASSIVE" />
+    <for>
+        <add order="0x40" stat="MEN" val="#MEN"/>
+        <add order="0x40" stat="CON" val="#CON"/>
+    </for>
+</skill>
+
+</list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<!--  Soltaker vs Adventure -->
+	<matchup attacker="95" target="93">
+		<modifiers
+			skillDamageMul="1.10"
+		/>
+	</matchup>
+</list>

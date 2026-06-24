@@ -1,0 +1,97 @@
+<areas>
+    <!-- Arena 1: Coliseum multi spawns agora! -->
+    <area name="Coliseum Arena">
+        <team1 name="Red">
+            <spawn x="148568" y="46232" z="-3408" />
+        </team1>
+
+        <team2 name="Blue">
+            <spawn x="150344" y="47368" z="-3408" />
+        </team2>
+
+        <doorsToClose>
+            <door>24190002</door>
+            <door>24190003</door>
+        </doorsToClose>
+
+        <doorsToOpen>
+            <door>24190002</door>
+            <door>24190003</door>
+        </doorsToOpen>
+
+        <rewardsWin>
+            <reward id="57" min="100" max="100" chance="100" />
+            <reward id="6392" min="1" max="2" chance="100" />
+        </rewardsWin>
+
+        <rewardsTie>
+            <reward id="57" min="50" max="50" chance="100" />
+            <reward id="7575" min="1" max="1" chance="100" />
+        </rewardsTie>
+
+        <rewardsLos>
+            <reward id="57" min="20" max="20" chance="100" />
+        </rewardsLos>
+
+        <rewardTopKills>
+            <reward id="6651" min="1" max="1" chance="100" />
+            <reward id="7577" min="5" max="10" chance="100" />
+        </rewardTopKills>
+    </area>
+
+    <!-- Arena 2: Varka -->
+    <area name="Varkas Silenos Barracks">
+         <team1 name="Red">
+            <spawn x="148568" y="46232" z="-3408" />
+        </team1>
+
+        <team2 name="Blue">
+            <spawn x="150344" y="47368" z="-3408" />
+        </team2>
+
+        <rewardsWin>
+            <reward id="57" min="150" max="150" chance="100" />
+            <reward id="5556" min="1" max="1" chance="100" />
+        </rewardsWin>
+
+        <rewardsTie>
+            <reward id="57" min="75" max="75" chance="100" />
+        </rewardsTie>
+
+        <rewardsLos>
+            <reward id="57" min="30" max="60" chance="100" />
+        </rewardsLos>
+
+        <rewardTopKills>
+            <reward id="7577" min="5" max="10" chance="100" />
+        </rewardTopKills>
+    </area>
+
+    <!-- Arena 3: Ketra -->
+    <area name="Ketra Orc Outpost">
+        <team1 name="Red">
+            <spawn x="148568" y="46232" z="-3408" />
+        </team1>
+
+        <team2 name="Blue">
+            <spawn x="150344" y="47368" z="-3408" />
+        </team2>
+
+        <rewardsWin>
+            <reward id="57" min="400" max="400" chance="100" />
+            <reward id="6393" min="1" max="1" chance="100" />
+        </rewardsWin>
+
+        <rewardsTie>
+            <reward id="57" min="100" max="200" chance="100" />
+        </rewardsTie>
+
+        <rewardsLos>
+            <reward id="57" min="40" max="80" chance="100" />
+        </rewardsLos>
+
+        <rewardTopKills>
+            <reward id="7577" min="5" max="10" chance="100" />
+        </rewardTopKills>
+    </area>
+</areas>

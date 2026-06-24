@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+    <!--
+        MAGE PROFILES - THIRD JOB / 3ª CLASSE
+
+        PADRAO DE EDICAO:
+        - Todo multiplicador em 1.00 significa valor original do servidor, sem buff ou nerf.
+        - Valor maior que 1.00 aumenta o atributo. Exemplo: 1.10 = +10%.
+        - Valor menor que 1.00 reduz o atributo. Exemplo: 0.90 = -10%.
+        - Use sempre ponto decimal, nunca virgula. Correto: 1.00 / Errado: 1,00.
+        - Mantenha duas casas decimais para facilitar leitura e comparacao.
+
+        IMPORTANTE:
+        - Este arquivo esta zerado/balanceado em 1.00 para servir como base limpa.
+        - Edite classe por classe, evitando alterar todos os perfis ao mesmo tempo.
+        - Orc Shaman/Dominator/Doomcryer ficam no arquivo mage, pois sao classes magicas de suporte/debuff.
+    -->
+
+    <!--
+        ATRIBUTOS MAGE:
+        mAtkMul       = multiplicador de ataque magico.
+        mCritRateMul  = multiplicador de chance de critical magico.
+        pDefMul       = multiplicador de defesa fisica.
+        mDefMul       = multiplicador de defesa magica.
+        castSpdMul    = multiplicador de velocidade de cast.
+        evasionMul    = multiplicador de esquiva.
+        maxHpMul      = multiplicador de HP maximo.
+        maxMpMul      = multiplicador de MP maximo.
+        maxCpMul      = multiplicador de CP maximo.
+    -->
+
+    <!-- ================= HUMAN MAGE ================= -->
+
+    <class id="94"> <!-- Archmage | Base: Sorcerer | Nuker humano de fogo/área. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="95"> <!-- Soultaker | Base: Necromancer | Nuker/debuffer humano com summon undead. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="96"> <!-- Arcana Lord | Base: Warlock | Summoner humano. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="97"> <!-- Cardinal | Base: Bishop | Healer humano principal. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="98"> <!-- Hierophant | Base: Prophet | Buffer/suporte humano. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <!-- ================= ELF MAGE ================= -->
+
+    <class id="103"> <!-- Mystic Muse | Base: Spellsinger | Nuker elfo. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="105"> <!-- Eva's Saint | Base: Elven Elder | Healer/recharger elfo. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="107"> <!-- Elemental Master | Base: Elemental Summoner | Summoner elfo. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <!-- ================= DARK ELF MAGE ================= -->
+
+    <class id="110"> <!-- Storm Screamer | Base: Spellhowler | Nuker dark elf. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="111"> <!-- Spectral Master | Base: Phantom Summoner | Summoner dark elf. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="112"> <!-- Shillien Saint | Base: Shillien Elder | Healer/recharger dark elf. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <!-- ================= ORC SHAMAN / ORC MAGE ================= -->
+
+    <class id="115"> <!-- Dominator | Base: Overlord | Orc Shaman. Classe mágica de suporte/debuff em clan/ally. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="116"> <!-- Doomcryer | Base: Warcryer | Orc Shaman. Classe mágica de buffs e suporte de party. -->
+        <stats
+            mAtkMul="1.00"
+            mCritRateMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            castSpdMul="1.00"
+            evasionMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+</list>

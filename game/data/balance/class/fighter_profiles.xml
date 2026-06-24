@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+
+    <!--
+        FIGHTER PROFILES - THIRD JOB / 3ª CLASSE
+
+        PADRAO DE EDICAO:
+        - Todo multiplicador em 1.00 significa valor original do servidor, sem buff ou nerf.
+        - Valor maior que 1.00 aumenta o atributo. Exemplo: 1.10 = +10%.
+        - Valor menor que 1.00 reduz o atributo. Exemplo: 0.90 = -10%.
+        - Use sempre ponto decimal, nunca virgula. Correto: 1.00 / Errado: 1,00.
+        - Mantenha duas casas decimais para facilitar leitura e comparacao.
+
+        IMPORTANTE:
+        - Este arquivo esta zerado/balanceado em 1.00 para servir como base limpa.
+        - Edite classe por classe, evitando alterar todos os perfis ao mesmo tempo.
+        - Orc Shaman/Dominator/Doomcryer ficam no arquivo mage, pois sao classes magicas de suporte/debuff.
+    -->
+
+    <!--
+        ATRIBUTOS FIGHTER:
+        pAtkMul      = multiplicador de ataque fisico.
+        pDefMul      = multiplicador de defesa fisica.
+        mDefMul      = multiplicador de defesa magica.
+        critRateMul  = multiplicador de chance de critical fisico.
+        accuracyMul  = multiplicador de acerto.
+        evasionMul   = multiplicador de esquiva.
+        atkSpdMul    = multiplicador de velocidade de ataque fisico.
+        maxHpMul     = multiplicador de HP maximo.
+        maxMpMul     = multiplicador de MP maximo.
+        maxCpMul     = multiplicador de CP maximo.
+    -->
+
+    <!-- ================= HUMAN FIGHTER ================= -->
+
+    <class id="88"> <!-- Duelist | Base: Gladiator | Guerreiro de dano físico com dual swords. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="89"> <!-- Dreadnought | Base: Warlord | Guerreiro de lança, controle em área e resistência. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="90"> <!-- Phoenix Knight | Base: Paladin | Tank humano defensivo. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="91"> <!-- Hell Knight | Base: Dark Avenger | Tank humano ofensivo/controle. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="92"> <!-- Sagittarius | Base: Hawkeye | Arqueiro humano. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="93"> <!-- Adventurer | Base: Treasure Hunter | Dagger humano. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <!-- ================= ELF FIGHTER ================= -->
+
+    <class id="99"> <!-- Eva's Templar | Base: Temple Knight | Tank elfo defensivo. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="100"> <!-- Sword Muse | Base: Swordsinger | Suporte fighter/bardo elfo. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="101"> <!-- Wind Rider | Base: Plains Walker | Dagger elfo. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="102"> <!-- Moonlight Sentinel | Base: Silver Ranger | Arqueiro elfo. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <!-- ================= DARK ELF FIGHTER ================= -->
+
+    <class id="108"> <!-- Ghost Hunter | Base: Abyss Walker | Dagger dark elf. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="109"> <!-- Ghost Sentinel | Base: Phantom Ranger | Arqueiro dark elf. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <!-- ================= ORC FIGHTER ================= -->
+
+    <class id="113"> <!-- Titan | Base: Destroyer | Guerreiro orc de alto HP/dano. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="114"> <!-- Grand Khavatari | Base: Tyrant | Lutador orc de ataque rápido. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <!-- ================= DWARF FIGHTER ================= -->
+
+    <class id="117"> <!-- Fortune Seeker | Base: Bounty Hunter | Anão coletor/spoil. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+    <class id="118"> <!-- Maestro | Base: Warsmith | Anão crafter/summon mecânico. -->
+        <stats
+            pAtkMul="1.00"
+            pDefMul="1.00"
+            mDefMul="1.00"
+            critRateMul="1.00"
+            accuracyMul="1.00"
+            evasionMul="1.00"
+            atkSpdMul="1.00"
+            maxHpMul="1.00"
+            maxMpMul="1.00"
+            maxCpMul="1.00"
+        />
+    </class>
+
+</list>

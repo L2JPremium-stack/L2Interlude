@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <skill id="3" name="Power Strike">
+        <balance 
+		powerMul="1.00" 
+		reuseMul="1.00" />
+    </skill>
+	
+</list>

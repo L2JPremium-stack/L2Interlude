@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Solo Farm</title>
+</head>
+
+<body>
+
+<center>
+
+<font color="LEVEL">Solo Farm Instance</font>
+<img src="L2UI.SquareWhite" width=260 height=1>
+
+<br>
+
+<!-- INFO PLAYER -->
+<table width=260>
+<tr>
+    <td align=center>
+        <font color="AAAAAA">Balance</font><br1>
+        <font color="00FF00">%balance%</font>
+    </td>
+    <td align=center>
+        <font color="AAAAAA">Price</font><br1>
+        <font color="FFD700">%price%</font>
+    </td>
+</tr>
+</table>
+
+<img src="L2UI.SquareWhite" width=260 height=1>
+
+<br>
+
+<!-- BUY SECTION -->
+<table width=260>
+<tr>
+    <td align=center>
+        <button value="Buy 500" action="bypass -h voiced_solofarm buy_500" width=95 height=25 back="L2UI_JDEV.AdminGreenBtn_Down" fore="L2UI_JDEV.AdminGreenBtn">
+        <br1>
+        <font color="AAAAAA">%cost500%</font>
+    </td>
+    <td align=center>
+        <button value="Buy 1000" action="bypass -h voiced_solofarm buy_1000" width=95 height=25 back="L2UI_JDEV.AdminGreenBtn_Down" fore="L2UI_JDEV.AdminGreenBtn">
+        <br1>
+        <font color="AAAAAA">%cost1000%</font>
+    </td>
+</tr>
+</table>
+
+<br>
+
+<!-- CUSTOM BUY -->
+<table width=260>
+<tr>
+    <td align=center>
+        <font color="AAAAAA">Custom (%min% - %max%)</font><br1>
+        <edit var="amount" width=80 type=number>
+        <br>
+        <button value="Buy" action="bypass -h voiced_solofarm buy_custom $amount" width=95 height=25 back="L2UI_JDEV.AdminGreenBtn_Down" fore="L2UI_JDEV.AdminGreenBtn">
+    </td>
+</tr>
+</table>
+
+<br>
+
+<img src="L2UI.SquareWhite" width=260 height=1>
+
+<br>
+
+<!-- INSTANCE INFO -->
+<table width=260>
+<tr>
+    <td align=center>
+        
+        <img src="L2UI_JDEV.ElementalFireSmallIcon" width=32 height=32>
+    </td>
+   <td align=center>
+        <font color="AAAAAA">Time</font><br1>
+        %time% min
+    </td>
+    <td align=center>
+        <font color="AAAAAA">Max Alive</font><br1>
+        %alive%
+    </td>
+</tr>
+</table>
+
+<br>
+
+<img src="L2UI.SquareWhite" width=260 height=1>
+
+<br>
+
+<!-- ACTIONS -->
+<table width=260>
+<tr>
+    <td align=center>
+        <button value="Enter" action="bypass -h voiced_solofarm enter" width=95 height=25 back="L2UI_JDEV.AdminGreenBtn_Down" fore="L2UI_JDEV.AdminGreenBtn">
+    </td>
+    <td align=center>
+        <button value="Refresh" action="bypass -h voiced_solofarm index" width=95 height=25 back="L2UI_JDEV.AdminGreenBtn_Down" fore="L2UI_JDEV.AdminGreenBtn">
+    </td>
+</tr>
+</table>
+<!-- ACTIONS -->
+<table width=260>
+<tr>
+    <td align=center>
+        <button value="info" action="bypass -h voiced_solofarm info" width=95 height=25 back="L2UI_JDEV.AdminGreenBtn_Down" fore="L2UI_JDEV.AdminGreenBtn">
+    </td>
+    <td align=center>
+        <button value="Stats" action="bypass -h voiced_solofarm status" width=95 height=25 back="L2UI_JDEV.AdminGreenBtn_Down" fore="L2UI_JDEV.AdminGreenBtn">
+    </td>
+</tr>
+</table>
+
+</center>
+
+</body>
+</html>

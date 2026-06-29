@@ -12,4 +12,14 @@ public class DropCategory
 	{
 		this.id = id;
 	}
+	
+	public boolean isSpoil()
+	{
+		return id < 0;
+	}
+	
+	public String getKind()
+	{
+		return isSpoil() ? "SPOIL / SWEEP" : "DROP";
+	}
 }

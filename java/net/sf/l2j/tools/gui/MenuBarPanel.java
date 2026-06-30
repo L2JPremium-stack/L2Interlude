@@ -93,8 +93,8 @@ public final class MenuBarPanel extends JMenuBar
 		final JDialog dlg = new JDialog(owner, "Sobre - L2JDev Database Panel", JDialog.ModalityType.APPLICATION_MODAL);
 		dlg.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_32x32.png").getImage());
 		dlg.setIconImages(icons);
 		
 		JPanel root = new JPanel(new BorderLayout(16, 16));

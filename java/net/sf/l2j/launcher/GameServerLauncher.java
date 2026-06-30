@@ -286,8 +286,8 @@ public class GameServerLauncher
 		mnGeo.add(mntmGeo);
 		
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_32x32.png").getImage());
 		
 		final JPanel systemPanel = new InterfaceInfo();
 		final JScrollPane scrollPanel = new JScrollPane(txtrConsole);

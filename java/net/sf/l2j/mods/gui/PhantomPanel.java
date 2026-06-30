@@ -58,8 +58,10 @@ public class PhantomPanel extends JFrame
 		super("FakePlayer Runtime");
 		
 		List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images/l2jdev_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images/l2jdev_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_32x32.png").getImage());
+		
+		
 		setIconImages(icons);
 		
 		setSize(1180, 720);

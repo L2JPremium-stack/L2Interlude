@@ -50,8 +50,8 @@ public class DatabaseMainFrame extends JFrame
 		setJMenuBar(new MenuBarPanel(this, dataView));
 		
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_32x32.png").getImage());
 		setIconImages(icons);
 		
 		tableList.setTableSelectionListener(dataView::loadTable);

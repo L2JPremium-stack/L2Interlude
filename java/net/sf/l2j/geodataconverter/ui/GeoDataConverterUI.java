@@ -119,8 +119,8 @@ public final class GeoDataConverterUI extends JFrame
 		});
 		// Set icons.
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_32x32.png").getImage());
 		applyDarkTheme();
 		setMinimumSize(new Dimension(980, 620));
 		setSize(1100, 720);

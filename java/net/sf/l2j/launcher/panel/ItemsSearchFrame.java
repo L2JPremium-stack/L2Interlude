@@ -2,8 +2,8 @@ package net.sf.l2j.launcher.panel;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
-import java.awt.Dimension;
 import java.awt.Dialog;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Image;
 import java.awt.Window;
@@ -242,8 +242,8 @@ public class ItemsSearchFrame
 	public static void openSearchItem()
 	{
 		final List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_16x16.png").getImage());
-		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "l2jdev_32x32.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_16x16.png").getImage());
+		icons.add(new ImageIcon(".." + File.separator + "images" + File.separator + "nexora_32x32.png").getImage());
 		
 		JFrame frame = new JFrame("Search Item");
 		frame.setSize(480, 320);

@@ -287,7 +287,7 @@ public class LoginServerLaucher
 		redirectSystemStreams();
 		
 		// Show splash screen.
-		new SplashScreen(".." + File.separator + "images" + File.separator + "splashscreen.gif", frame);
+		new SplashScreen(".." + File.separator + "images" + File.separator + "nexora_splash.png", frame);
 		
 	}
 	

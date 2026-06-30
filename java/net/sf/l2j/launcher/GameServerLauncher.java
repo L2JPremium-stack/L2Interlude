@@ -363,7 +363,7 @@ public class GameServerLauncher
 		
 		redirectSystemStreams();
 		
-		new SplashScreen(".." + File.separator + "images" + File.separator + "splashscreen.gif", frame);
+		new SplashScreen(".." + File.separator + "images" + File.separator + "nexora_splash.png", frame);
 	}
 	
 	void updateTextArea(String text)

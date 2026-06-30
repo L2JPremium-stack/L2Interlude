@@ -5,7 +5,7 @@
         port="3306"
         database="l2jdb"
         user="root"
-        password="84364231"
+        password="root"
         useSSL="false"
         serverTimezone="America/Sao_Paulo"
     />

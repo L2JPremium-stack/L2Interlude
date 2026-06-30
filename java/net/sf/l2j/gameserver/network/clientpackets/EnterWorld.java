@@ -22,7 +22,6 @@ import net.sf.l2j.gameserver.ThreadPool;
 import net.sf.l2j.gameserver.communitybbs.Manager.MailBBSManager;
 import net.sf.l2j.gameserver.datatables.AdminCommandAccessRights;
 import net.sf.l2j.gameserver.datatables.AnnouncementTable;
-import net.sf.l2j.gameserver.datatables.GmListTable;
 import net.sf.l2j.gameserver.datatables.MapRegionTable.TeleportWhereType;
 import net.sf.l2j.gameserver.datatables.SkillTable;
 import net.sf.l2j.gameserver.datatables.SkillTable.FrequentSkill;
@@ -111,6 +110,7 @@ public class EnterWorld extends L2GameClientPacket
 			return;
 		}
 		
+		GmAccessService.onEnterWorld(activeChar);
 		
 		
 		if (activeChar.isGM())
@@ -118,8 +118,7 @@ public class EnterWorld extends L2GameClientPacket
 			activeChar.getAppearance().setNameColor(Config.MASTERACCESS_NAME_COLOR);
 			activeChar.getAppearance().setTitleColor(Config.MASTERACCESS_TITLE_COLOR);
 			
-			GmAccessService.onEnterWorld(activeChar);
-			
+		
 			if (Config.GM_SUPER_HASTE)
 				SkillTable.getInstance().getInfo(7029, 4).getEffects(activeChar, activeChar);
 			
@@ -131,11 +130,7 @@ public class EnterWorld extends L2GameClientPacket
 			
 			if (Config.GM_STARTUP_SILENCE && AdminCommandAccessRights.getInstance().hasAccess("admin_silence", activeChar.getAccessLevel()))
 				activeChar.setInRefusalMode(true);
-			
-			if (Config.GM_STARTUP_AUTO_LIST && AdminCommandAccessRights.getInstance().hasAccess("admin_gmlist", activeChar.getAccessLevel()))
-				GmListTable.getInstance().addGm(activeChar, false);
-			else
-				GmListTable.getInstance().addGm(activeChar, true);
+
 			
 		}
 		

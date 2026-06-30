@@ -150,10 +150,11 @@ public class FakeCommandPanel extends JPanel
                     });
 
                     owner.toast("CREATE OK: " + created.size() + " @ " + point.getName());
+                    owner.refreshAsync();
                 }
                 catch (Exception ex)
                 {
-                    owner.toast("Create failed: " + ex.getMessage());
+                    owner.toast("Create failed: " + getErrorMessage(ex));
                 }
             });
         });
@@ -168,10 +169,11 @@ public class FakeCommandPanel extends JPanel
                 {
                     int spawned = FakeAdminService.spawnPinnedOfflineToPoint(pinned, point, radius);
                     owner.toast("SPAWN PINNED OK: " + spawned + " restored/spawned.");
+                    owner.refreshAsync();
                 }
                 catch (Exception ex)
                 {
-                    owner.toast("Spawn pinned failed: " + ex.getMessage());
+                    owner.toast("Spawn pinned failed: " + getErrorMessage(ex));
                 }
             });
         });
@@ -184,10 +186,11 @@ public class FakeCommandPanel extends JPanel
                 {
                     int d = FakeAdminService.despawnPinnedOnline(pinned);
                     owner.toast("DESPAWN PINNED OK: " + d);
+                    owner.refreshAsync();
                 }
                 catch (Exception ex)
                 {
-                    owner.toast("Despawn pinned failed: " + ex.getMessage());
+                    owner.toast("Despawn pinned failed: " + getErrorMessage(ex));
                 }
             });
         });
@@ -199,11 +202,16 @@ public class FakeCommandPanel extends JPanel
                 try
                 {
                     int d = FakeAdminService.deletePinnedDb(pinned);
+                    owner.runOnEdt(() -> {
+                        owner.getModel().clearPins();
+                        updateButtons();
+                    });
                     owner.toast("DELETE DB PINNED OK: " + d);
+                    owner.refreshAsync();
                 }
                 catch (Exception ex)
                 {
-                    owner.toast("Delete pinned failed: " + ex.getMessage());
+                    owner.toast("Delete pinned failed: " + getErrorMessage(ex));
                 }
             });
         });
@@ -213,5 +221,14 @@ public class FakeCommandPanel extends JPanel
     public void onModelChanged()
     {
         updateButtons();
+    }
+    
+    private static String getErrorMessage(Exception e)
+    {
+        if (e == null)
+            return "unknown";
+        
+        String message = e.getMessage();
+        return (message != null && !message.isBlank()) ? message : e.getClass().getSimpleName();
     }
 }

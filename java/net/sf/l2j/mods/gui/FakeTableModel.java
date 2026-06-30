@@ -27,7 +27,8 @@ public class FakeTableModel extends AbstractTableModel
 	public void setData(List<FakeAdminService.FakeRow> list)
 	{
 		data.clear();
-		data.addAll(list);
+		if (list != null)
+			data.addAll(list);
 		fireTableDataChanged();
 	}
 	

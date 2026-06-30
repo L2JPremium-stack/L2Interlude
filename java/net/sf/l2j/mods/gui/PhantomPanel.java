@@ -10,6 +10,7 @@ import java.awt.Image;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
@@ -47,6 +48,7 @@ public class PhantomPanel extends JFrame
 	private final FakeTableModel model = new FakeTableModel();
 	private final JTable table = new JTable(model);
 	private final PaginationPanel pager = new PaginationPanel();
+	private final AtomicBoolean refreshing = new AtomicBoolean(false);
 	
 	private List<FakeAdminService.FakeRow> allRows = List.of();
 	private List<FakeAdminService.FakeRow> filtered = List.of();
@@ -79,7 +81,7 @@ public class PhantomPanel extends JFrame
 		
 		add(root);
 		
-		refreshBtn.addActionListener(e -> ThreadPool.execute(this::refreshSafe));
+		refreshBtn.addActionListener(e -> refreshAsync());
 		wireSearch();
 		
 		ThreadPool.scheduleAtFixedRate(this::refreshSafe, 1000, 2000);
@@ -95,6 +97,11 @@ public class PhantomPanel extends JFrame
 	public void runOnEdt(Runnable r)
 	{
 		SwingUtilities.invokeLater(r);
+	}
+	
+	public void refreshAsync()
+	{
+		ThreadPool.execute(this::refreshSafe);
 	}
 	
 	public void toast(String msg)
@@ -166,6 +173,7 @@ public class PhantomPanel extends JFrame
 		wrap.setOpaque(false);
 		
 		cmdPanel = new FakeCommandPanel(this);
+		model.addTableModelListener(e -> cmdPanel.onModelChanged());
 		
 		wrap.add(cmdPanel, BorderLayout.NORTH);
 		wrap.add(new JScrollPane(table), BorderLayout.CENTER);
@@ -224,7 +232,10 @@ public class PhantomPanel extends JFrame
 	{
 		List<Integer> ids = new ArrayList<>(filtered.size());
 		for (FakeAdminService.FakeRow r : filtered)
-			ids.add(r.objectId);
+		{
+			if (r != null)
+				ids.add(r.objectId);
+		}
 		return ids;
 	}
 	
@@ -261,32 +272,41 @@ public class PhantomPanel extends JFrame
 	
 	private void refreshSafe()
 	{
-		final List<FakeAdminService.FakeRow> loaded = FakeAdminService.loadAllRows();
+		if (!refreshing.compareAndSet(false, true))
+			return;
 		
-		int online = 0;
-		
-		for (FakeAdminService.FakeRow r : loaded)
+		try
 		{
-			if (r.online)
+			List<FakeAdminService.FakeRow> loadedRows = FakeAdminService.loadAllRows();
+			final List<FakeAdminService.FakeRow> loaded = (loadedRows != null) ? loadedRows : List.of();
+			
+			int online = 0;
+			for (FakeAdminService.FakeRow r : loaded)
 			{
-				online++;
-				
+				if (r != null && r.online)
+					online++;
 			}
+			
+			final int onlineCount = online;
+			final int offlineCount = Math.max(0, loaded.size() - onlineCount);
+			
+			SwingUtilities.invokeLater(() -> {
+				allRows = loaded;
+				
+				onlineLbl.setText(String.valueOf(onlineCount));
+				offlineLbl.setText(String.valueOf(offlineCount));
+				
+				applyFilterAndPage();
+			});
 		}
-		
-		final int onlineCount = online;
-		
-		final int offlineCount = Math.max(0, loaded.size() - onlineCount);
-		
-		SwingUtilities.invokeLater(() -> {
-			allRows = loaded;
-			
-			onlineLbl.setText(String.valueOf(onlineCount));
-			
-			offlineLbl.setText(String.valueOf(offlineCount));
-			
-			applyFilterAndPage();
-		});
+		catch (Exception e)
+		{
+			toast("Refresh failed: " + getErrorMessage(e));
+		}
+		finally
+		{
+			refreshing.set(false);
+		}
 	}
 	
 	private void applyFilterAndPageSafe()
@@ -338,5 +358,14 @@ public class PhantomPanel extends JFrame
 		l.setFont(new Font("Segoe UI", Font.BOLD, 22));
 		l.setForeground(Color.WHITE);
 		return l;
+	}
+	
+	private static String getErrorMessage(Exception e)
+	{
+		if (e == null)
+			return "unknown";
+		
+		String message = e.getMessage();
+		return (message != null && !message.isBlank()) ? message : e.getClass().getSimpleName();
 	}
 }

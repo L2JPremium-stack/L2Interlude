@@ -74,33 +74,82 @@ public final class FakeAdminService
 				int z = rs.getInt("z");
 				ClassId cid = (classid >= 0 && classid < ClassId.VALUES.length) ? ClassId.VALUES[classid] : null;
 				FakePlayer fp = FakePlayerManager.getInstance().getPlayer(objectId);
-				boolean online = fp.isOnline() && !fp.isDestroyed();
-				String state = "OFFLINE";
-				if (online)
-				{
-					state = fp.getCurrentAction();
-					x = fp.getX();
-					y = fp.getY();
-					z = fp.getZ();
-				}
-				rows.put(objectId, new FakeRow(objectId, name, cid, level, x, y, z, online, state));
+				rows.put(objectId, buildRow(objectId, name, cid, level, x, y, z, fp));
 			}
 		}
 		catch (Exception e)
 		{
-			LOGGER.warning("Failed loadAllRows: " + e.getMessage());
+			LOGGER.warning("Failed loadAllRows: " + getErrorMessage(e));
 		}
 		
 		// Edge case: fake online que não está no DB query (raro)
 		for (FakePlayer fp : FakePlayerManager.getInstance().getFakePlayers())
 		{
-			if (rows.containsKey(fp.getObjectId()))
-				continue;
-			
-			rows.put(fp.getObjectId(), new FakeRow(fp.getObjectId(), fp.getName(), fp.getClassId(), fp.getStat().getLevel(), fp.getX(), fp.getY(), fp.getZ(), true, fp.getCurrentAction()));
+			addRuntimeOnlyRow(rows, fp);
 		}
 		
 		return new ArrayList<>(rows.values());
+	}
+	
+	private static FakeRow buildRow(int objectId, String name, ClassId classId, int level, int x, int y, int z, FakePlayer fp)
+	{
+		boolean online = false;
+		String state = "OFFLINE";
+		
+		if (isRuntimeOnline(fp))
+		{
+			try
+			{
+				x = fp.getX();
+				y = fp.getY();
+				z = fp.getZ();
+				state = getRuntimeState(fp);
+				online = true;
+			}
+			catch (Exception e)
+			{
+				LOGGER.fine("Skipped runtime state for fake " + objectId + ": " + getErrorMessage(e));
+			}
+		}
+		
+		return new FakeRow(objectId, name, classId, level, x, y, z, online, state);
+	}
+	
+	private static void addRuntimeOnlyRow(Map<Integer, FakeRow> rows, FakePlayer fp)
+	{
+		if (!isRuntimeOnline(fp))
+			return;
+		
+		try
+		{
+			int objectId = fp.getObjectId();
+			if (rows.containsKey(objectId))
+				return;
+			
+			rows.put(objectId, new FakeRow(objectId, fp.getName(), fp.getClassId(), fp.getStat().getLevel(), fp.getX(), fp.getY(), fp.getZ(), true, getRuntimeState(fp)));
+		}
+		catch (Exception e)
+		{
+			LOGGER.fine("Skipped runtime fake row: " + getErrorMessage(e));
+		}
+	}
+	
+	private static boolean isRuntimeOnline(FakePlayer fp)
+	{
+		try
+		{
+			return fp != null && !fp.isDestroyed() && fp.isOnline();
+		}
+		catch (Exception e)
+		{
+			return false;
+		}
+	}
+	
+	private static String getRuntimeState(FakePlayer fp)
+	{
+		String state = fp.getCurrentAction();
+		return (state != null && !state.isBlank()) ? state : "ONLINE";
 	}
 	
 	// ========================= CREATE (new) =========================
@@ -153,7 +202,7 @@ public final class FakeAdminService
 		{
 			// já online? não faz nada
 			FakePlayer online = FakePlayerManager.getInstance().getPlayer(objId);
-			if (online != null)
+			if (isRuntimeOnline(online))
 				continue;
 			
 			FakePlayer fp = restoreSingle(objId);
@@ -179,7 +228,30 @@ public final class FakeAdminService
 	
 	private static FakePlayer restoreSingle(int objectId)
 	{
+		FakePlayer current = FakePlayerManager.getInstance().getPlayer(objectId);
+		if (current != null && !isRuntimeOnline(current))
+			removeStaleRuntime(current, objectId);
+		
 		return FakePlayerRestoreEngine.getInstance().restoreSingle(objectId);
+	}
+	
+	private static void removeStaleRuntime(FakePlayer fp, int objectId)
+	{
+		if (fp == null)
+			return;
+		
+		try
+		{
+			if (fp.isDestroyed())
+				FakePlayerManager.getInstance().unregister(fp);
+			else
+				fp.deleteMe();
+		}
+		catch (Exception e)
+		{
+			FakePlayerManager.getInstance().unregister(fp);
+			LOGGER.fine("Removed stale fake runtime objId=" + objectId + ": " + getErrorMessage(e));
+		}
 	}
 	
 	// ========================= DESPAWN Selected (Pinned) =========================
@@ -193,16 +265,60 @@ public final class FakeAdminService
 		for (int objId : pinnedIds)
 		{
 			FakePlayer fp = FakePlayerManager.getInstance().getPlayer(objId);
-			if (fp == null)
-				continue;
-			fp.store();
-			fp.abortAttack();
-			fp.abortCast();
-			fp.deleteMe();
-			despawned++;
+			if (despawnFake(fp, objId))
+				despawned++;
 		}
 		
 		return despawned;
+	}
+	
+	private static boolean despawnFake(FakePlayer fp, int objectId)
+	{
+		if (fp == null)
+			return false;
+		if (fp.isDestroyed())
+		{
+			FakePlayerManager.getInstance().unregister(fp);
+			return false;
+		}
+		
+		try
+		{
+			fp.store();
+		}
+		catch (Exception e)
+		{
+			LOGGER.warning("Failed storing fake before despawn objId=" + objectId + ": " + getErrorMessage(e));
+		}
+		
+		try
+		{
+			fp.abortAttack();
+		}
+		catch (Exception e)
+		{
+			LOGGER.fine("Failed abortAttack before despawn objId=" + objectId + ": " + getErrorMessage(e));
+		}
+		
+		try
+		{
+			fp.abortCast();
+		}
+		catch (Exception e)
+		{
+			LOGGER.fine("Failed abortCast before despawn objId=" + objectId + ": " + getErrorMessage(e));
+		}
+		
+		try
+		{
+			fp.deleteMe();
+			return true;
+		}
+		catch (Exception e)
+		{
+			LOGGER.warning("Failed despawn fake objId=" + objectId + ": " + getErrorMessage(e));
+			return false;
+		}
 	}
 	
 	// ========================= DELETE DB Selected (Pinned) =========================
@@ -217,12 +333,7 @@ public final class FakeAdminService
 		{
 			FakePlayer fp = FakePlayerManager.getInstance().getPlayer(objId);
 			if (fp != null)
-			{
-				fp.store();
-				fp.abortAttack();
-				fp.abortCast();
-				fp.deleteMe(); // sai do mundo
-			}
+				despawnFake(fp, objId);
 			
 			if (deleteCharAndMaybeAccount(objId))
 				deleted++;
@@ -429,13 +540,24 @@ public final class FakeAdminService
 		if (src == null || src.isEmpty())
 			return List.of();
 		if (text == null || text.isBlank())
-			return src;
+		{
+			List<FakeRow> out = new ArrayList<>(src.size());
+			for (FakeRow r : src)
+			{
+				if (r != null)
+					out.add(r);
+			}
+			return out;
+		}
 		
 		String q = text.trim().toLowerCase();
 		List<FakeRow> out = new ArrayList<>();
 		
 		for (FakeRow r : src)
 		{
+			if (r == null)
+				continue;
+			
 			String cls = (r.classId != null) ? r.classId.name().toLowerCase() : "";
 			String name = (r.name != null) ? r.name.toLowerCase() : "";
 			
@@ -443,5 +565,14 @@ public final class FakeAdminService
 				out.add(r);
 		}
 		return out;
+	}
+	
+	private static String getErrorMessage(Exception e)
+	{
+		if (e == null)
+			return "unknown";
+		
+		String message = e.getMessage();
+		return (message != null && !message.isBlank()) ? message : e.getClass().getSimpleName();
 	}
 }
